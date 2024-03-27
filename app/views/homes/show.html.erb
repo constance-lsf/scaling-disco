@@ -1,11 +1,14 @@
 <div class="container">
 
-  <img src="/assets/profile_pic.png" alt="Profile Picture" class="profile-pic">
+  <div class="pic-position">
+    <div class="text-section">
+      <h1>Hi, I'm Constance</h1>
+      <h2>And I'm a FullStack Developer</h2>
+    </div>
+    <img src="/assets/profile_pic.png" alt="Profile Picture" class="profile-pic">
+  </div>
 
-  <h1>Hi, I'm Constance</h1>
-  <h2>And I'm a FullStack Developer</h2>
-
-  <div class="d-flex justify-content-center align-items-center">
+  <div class="btn-container">
     <div class="btn-about">
       <i class="fa-solid fa-arrow-right"></i>
       <%= link_to "to know more", about_path(1) %>
