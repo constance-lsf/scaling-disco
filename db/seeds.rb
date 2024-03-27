@@ -22,11 +22,6 @@ Contact.create!(
   email: 'johndoe@example.com'
 )
 
-Home.create!(
-  title: 'Welcome to My Portfolio',
-  description: 'This is my portfolio site, where you can learn more about me and my projects.'
-)
-
 Project.create!(
   title: 'Social Media Platform',
   description: 'A social media platform built with Ruby on Rails and React. Users can create accounts, post messages, and follow other users.',

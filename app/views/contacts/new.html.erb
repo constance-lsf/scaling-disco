@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1>Lorem ipsum dolor sit amet?</h1>
+
+  <%= form_with(model: @contact, url: new_contact_path, local: true) do |form| %>
+    <%= form.label "What's your name?" %>
+    <%= form.text_field :name %>
+
+    <%= form.label "What's your mail address?" %>
+    <%= form.email_field :email %>
+
+    <%= form.label "Tell me what you want" %>
+    <%= form.text_area :message %>
+
+    <%= form.submit "Send me your message" %>
+  <% end %>
+
+</div>

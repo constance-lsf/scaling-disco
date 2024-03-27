@@ -1,8 +1,25 @@
 <div class="container">
 
-  <img src="images/profile_pic.png" alt="my profile pic">
+  <img src="/assets/profile_pic.png" alt="Profile Picture" class="profile-pic">
 
   <h1>Hi, I'm Constance</h1>
   <h2>And I'm a FullStack Developer</h2>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="btn-about">
+      <i class="fa-solid fa-arrow-right"></i>
+      <%= link_to "to know more", about_path(1) %>
+    </div>
+
+    <div class="btn-about">
+      <i class="fa-solid fa-arrow-right"></i>
+      <%= link_to "see my projects", projects_path %>
+    </div>
+
+    <div class="btn-about">
+      <i class="fa-solid fa-arrow-right"></i>
+      <%= link_to "contact me", new_contact_path %>
+    </div>
+  </div>
 
 </div>
