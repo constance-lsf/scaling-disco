@@ -23,7 +23,11 @@
 @import "components/footer";
 @import "components/navbar";
 
-//Pages
+// Config
+@import "config/colors";
+@import "config/fonts";
+
+// Pages
 @import "pages/home";
 @import "pages/about";
 @import "pages/projects";
