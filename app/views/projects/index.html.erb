@@ -1,12 +1,26 @@
 <div class="container">
 
   <h1>Lorem ipsum dolor sit amet</h1>
+  <br>
+
+  <ul data-controller="tab_category">
+    <li><%= link_to "All", projects_path, { data: { action: "click->tab#switchTab" } } %></li>
+    <% @skills.each do |skill| %>
+      <li><%= link_to skill, projects_path(skill: skill), { data: { action: "click->tab#switchTab" } } %></li>
+    <% end %>
+  </ul>
+
+  <br>
+  <hr>
+  <br>
 
   <% @projects.each do |project| %>
-    <h2><%= project.title %></h2>
-    <p><%= project.date %></p>
-    <p><%= project.description %></p>
-    <p><%= project.skill %></p>
+    <div class="project" data-skill="<%= project.skill %>">
+      <h2><%= project.title %></h2>
+      <p><%= project.date %></p>
+      <p><%= project.description %></p>
+      <p><%= project.skill %></p>
+    </div>
   <% end %>
 
 </div>
