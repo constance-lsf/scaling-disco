@@ -26,19 +26,23 @@ Project.create!(
   title: 'Social Media Platform',
   description: 'A social media platform built with Ruby on Rails and React. Users can create accounts, post messages, and follow other users.',
   skill: 'Ruby on Rails, React',
-  date: '2023-01-01'
+  date: '2023-01-01',
+  github_link: 'https://github.com/constance-lsf',
+  web_link: 'https://social-media-platform.herokuapp.com'
 )
 
 Project.create!(
   title: 'E-commerce Site',
   description: 'An e-commerce site built with Ruby on Rails and JavaScript. Users can browse products, add them to a cart, and check out.',
   skill: 'Ruby on Rails, JavaScript',
-  date: '2022-12-01'
+  date: '2022-12-01',
+  github_link: 'https://github.com/constance-lsf'
 )
 
 Project.create!(
   title: 'Blogging Platform',
   description: 'A blogging platform built with Ruby on Rails. Users can create accounts, write posts, and comment on other users posts.',
   skill: 'Ruby on Rails',
-  date: '2022-11-01'
+  date: '2022-11-01',
+  github_link: 'https://github.com/constance-lsf'
 )
