@@ -7,10 +7,32 @@
 
 <div class="container">
 
-<h1><%= @about.title %></h1>
+  <h1>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</h1>
 
-<p><%= @about.description %></p>
-<p><%= @about.skill %></p>
-<p><%= @about.experience %></p>
+  <br>
+  <hr>
+  <br>
+
+  <div class="about-card d-flex">
+
+    <div class="col-md-1">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+    <div class="col-md-5">
+      <div class="about-infos">
+        <h5>Title</h5>
+        <p><%= @about.description %></p>
+        <p><%= @about.skill %></p>
+        <p><%= @about.experience %></p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="about-pic">
+        <img src="/assets/profile_pic.png" alt="Profile Picture" style="width: 100%">
+      </div>
+    </div>
+  </div>
 
 </div>
