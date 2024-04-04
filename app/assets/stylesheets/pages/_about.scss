@@ -1,17 +1,82 @@
 .container {
   min-height: 70vh;
+  max-width: 992px;
+
+  .h1-big-title {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    line-height: 55px;
+  }
+
+  h5 {
+    .h5-title {
+      margin-left: 10px;
+    }
+  }
+
+  .line-break {
+    display: block;
+    height: 1px;
+  }
+
+  .arrow-icon {
+    text-align: center;
+  }
+
+  .about-title {
+    margin-block: 30px;
+  }
 
   .about-infos {
-    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 45px;
+    color: grey;
 
     .about-skill {
       color: #9B8269;
-      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-inline: 30px;
+      flex: 1;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      flex: 1;
     }
   }
 
   .about-story {
     display: flex;
-    margin-top: 20px;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+    .story-infos {
+      flex: 1;
+      padding-right: 70px;
+
+      p {
+        color: grey;
+      }
+    }
+  }
+
+  .about-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 25px;
+    }
   }
 }
