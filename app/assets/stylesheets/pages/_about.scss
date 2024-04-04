@@ -2,17 +2,25 @@
 
 .container {
   min-height: 70vh;
-  max-width: 992px;
+  max-width: 992px!important;
 
   .h1-big-title {
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-block: 100px;
     line-height: 55px;
   }
 
-  h5 {
-    .h5-title {
-      margin-left: 10px;
+  .about-title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    h5 {
+      .h5-title {
+        margin-left: 10px;
+      }
+    }
+
+    .arrow-icon {
+      text-align: center;
     }
   }
 
@@ -21,64 +29,90 @@
     height: 1px;
   }
 
-  .arrow-icon {
-    text-align: center;
-  }
-
-  .about-title {
-    margin-block: 30px;
-  }
-
   .about-infos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 1rem;
-    margin-bottom: 45px;
-    color: grey;
 
-    .about-skill {
-      color: #9B8269;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-inline: 30px;
-      flex: 1;
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 1rem;
+    .all-skill-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: space-between;
+      gap: 20px;
+      text-align: center;
+
+      .skill-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        height: 100px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+
+        .expanded {
+          height: auto;
+        }
+
+        h6 {
+          cursor: pointer;
+        }
+
+        .description {
+          margin: 10px;
+        }
+
+        .hidden {
+          display: none;
+        }
+
+        .underline-brown {
+          background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+          background-repeat: no-repeat;
+          background-size: 100% 0.2em;
+          background-position: 0 88%;
+          transition: background-size 0.25s ease-in;
+
+          &:hover {
+            background-size: 100% 88%;
+          }
+
+        }
+
+        .underline-brown:hover,
+        .clicked {
+          background-size: 100% 88%;
+        }
+
+      }
     }
 
     p {
-      flex: 1;
+      color: grey;
     }
   }
 
   .about-story {
-    display: flex;
-    align-items: flex-start;
     margin-top: 1rem;
 
     .story-infos {
-      flex: 1;
-      padding-right: 70px;
+      color: grey;
+    }
 
-      p {
-        color: grey;
+    .about-pic {
+      float: right;
+      max-width: 45%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;
       }
     }
   }
+}
 
-  .about-pic {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    img {
-      max-height: 100%;
-      max-width: 100%;
-      border-radius: 25px;
-    }
+@media screen and (max-width: 800px) {
+  .container .about-infos .all-skill-cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Par exemple, 150px pour les écrans plus petits */
   }
 }
