@@ -1,3 +1,5 @@
+@import "config/colors";
+
 .container {
   min-height: 100vh;
   margin-block: 5em;
@@ -14,12 +16,23 @@
     align-items: center;
 
     .text-section {
-      top: 0;
-      left: 0;
+      // top: 0;
+      // left: 0;
       text-align: right;
       margin-right: -45px;
-      margin-top: -100px;
+      margin-top: -60px;
       z-index: 1;
+
+      p {
+        margin-left: 15px;
+        color: $brown;
+      }
+    }
+
+    .short-description {
+      display: flex;
+      text-align: left;
+      margin-top: 30px;
     }
   }
 

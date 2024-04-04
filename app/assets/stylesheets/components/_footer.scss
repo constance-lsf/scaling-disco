@@ -1,3 +1,5 @@
+@import "config/colors";
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -12,7 +14,15 @@
   color: rgba(0,0,0,0.3);
 
   .footer-mail {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+      color: $dark-brown;
+
+      &:hover {
+        color: $light-brown;
+        transition: 0.3s;
+      }
+    }
   }
 
   .footer-links {
