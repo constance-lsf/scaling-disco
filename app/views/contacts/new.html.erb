@@ -3,12 +3,13 @@
   <h1>Lorem ipsum dolor sit amet?</h1>
 
   <br>
+  <div class="contact-form">
+    <%= simple_form_for contact_path do |f| %>
+      <%= f.input :name, placeholder: "What's your name?" %>
+      <%= f.input :email, placeholder: "What's your mail address?" %>
+      <%= f.input :message, placeholder: "Tell me what you want..." %>
+      <%= f.button :submit, value: "Send me your message" %>
+    <% end %>
+  </div>
 
-  <%= simple_form_for contact_path do |f| %>
-    <%= f.input :name, placeholder: "What's your name?" %>
-    <%= f.input :email, placeholder: "What's your mail address?" %>
-    <%= f.input :message, label: "Tell me what you want" %>
-    <%= f.button :submit, value: "Send me your message" %>
-  <% end %>
-  
 </div>

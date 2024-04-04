@@ -1,0 +1,45 @@
+.container {
+
+  .contact-form {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid black;
+      padding: 10px;
+      margin-top: 25px;
+      font-size: 16px;
+      color: black;
+      text-align: center;
+      max-width: 500px;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+
+    label {
+      display: none;
+    }
+
+    button {
+      margin-top: 20px;
+      border: none;
+      padding: 10px 20px;
+      padding-top: 25px;
+      font-size: 16px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+}
