@@ -17,32 +17,31 @@ About.create!(
   experience: 'I have worked on several projects, including a social media platform, an e-commerce site, and a blogging platform.'
 )
 
-Contact.create!(
-  name: 'John Doe',
-  email: 'johndoe@example.com'
-)
+# Project.create!(
+#   title: 'Social Media Platform',
+#   description: 'A social media platform built with Ruby on Rails and React.
+#   Users can create accounts, post messages, and follow other users.
+#   browse products, add them to a cart, and check out.',
+#   skill: 'Ruby on Rails, Javascript',
+#   date: '2023-01-01',
+#   github_link: 'https://github.com/constance-lsf',
+#   # web_link: 'https://social-media-platform.herokuapp.com'
+# )
 
 Project.create!(
   title: 'Social Media Platform',
-  description: 'A social media platform built with Ruby on Rails and React. Users can create accounts, post messages, and follow other users.',
-  skill: 'Ruby on Rails, React',
-  date: '2023-01-01',
-  github_link: 'https://github.com/constance-lsf',
-  web_link: 'https://social-media-platform.herokuapp.com'
-)
-
-Project.create!(
-  title: 'E-commerce Site',
-  description: 'An e-commerce site built with Ruby on Rails and JavaScript. Users can browse products, add them to a cart, and check out.',
+  description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4.
+  Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
   skill: 'Ruby on Rails, JavaScript',
-  date: '2022-12-01',
-  github_link: 'https://github.com/constance-lsf'
+  date: '04-03-2024 - 2 weeks',
+  github_link: 'https://github.com/achillllllllle/tois'
 )
 
 Project.create!(
-  title: 'Blogging Platform',
-  description: 'A blogging platform built with Ruby on Rails. Users can create accounts, write posts, and comment on other users posts.',
-  skill: 'Ruby on Rails',
-  date: '2022-11-01',
-  github_link: 'https://github.com/constance-lsf'
+  title: 'Airbnb Clone',
+  description: 'A platform built with Ruby on Rails and Javascript in a team of 4.
+  Users can create accounts, add their own activities called "wonders", and book some wonders.',
+  skill: 'Ruby on Rails, JavaScript',
+  date: '26-02-2024 - 1 week',
+  github_link: 'https://github.com/achillllllllle/unbelievably'
 )

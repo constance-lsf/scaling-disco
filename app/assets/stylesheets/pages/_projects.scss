@@ -1,6 +1,11 @@
 @import "config/colors";
 
 .container {
+
+  .h1-big-title {
+    margin-block: 100px;
+  }
+
   .ul-projects {
     list-style-type: none;
     display: flex;

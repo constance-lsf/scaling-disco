@@ -1,9 +1,12 @@
 .container {
 
+  .h1-big-title {
+    margin-block: 100px;
+    text-align: center;
+  }
+
   .contact-form {
     text-align: center;
-    margin: 20px auto;
-    padding: 20px;
 
     input[type='text'],
     input[type='email'],
