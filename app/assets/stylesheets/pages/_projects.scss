@@ -1,12 +1,12 @@
 @import "config/colors";
 
 .container {
-  ul {
+  .ul-projects {
     list-style-type: none;
     display: flex;
     padding-left: 0px;
 
-    li {
+    .li-projects {
       padding: 10px;
       padding-inline: 20px;
       margin-right: 20px;

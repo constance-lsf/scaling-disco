@@ -13,13 +13,12 @@ export default class extends Controller {
 
     const card = event.currentTarget.closest(".skill-card");
     const description = card.querySelector(".description");
-    // description.classList.toggle("hidden");
 
-    console.log(card, description);
+    // console.log(card, description);
 
     card.classList.toggle("expanded");
 
-    console.log(card.classList.contains("expanded"));
+    // console.log(card.classList.contains("expanded"));
 
     if (card.classList.contains("expanded")) {
       description.classList.remove("hidden");

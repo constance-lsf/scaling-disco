@@ -3,8 +3,8 @@
   <h1>Discover my projects</h1>
   <br>
 
-  <ul data-controller="tab-category">
-    <li data-action="click->tab-category#changeTab" data-tab="all"><%= link_to "All", projects_path %></li>
+  <ul class="ul-projects" data-controller="tab-category">
+    <li class="li-projects" data-action="click->tab-category#changeTab" data-tab="all"><%= link_to "All", projects_path %></li>
     <% @skills.each do |skill| %>
       <li data-action="click->tab-category#changeTab" data-tab="<%= skill %>"><%= link_to skill, projects_path(skill: skill) %></li>
     <% end %>

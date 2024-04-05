@@ -9,7 +9,16 @@
     line-height: 55px;
   }
 
-  .about-title {
+  .line-break {
+    display: block;
+    height: 1px;
+  }
+
+  .arrow-icon {
+    text-align: center;
+  }
+
+  .about-skills {
     margin-top: 70px;
     margin-bottom: 30px;
 
@@ -19,90 +28,90 @@
       }
     }
 
-    .arrow-icon {
-      text-align: center;
-    }
-  }
+    .about-skills-infos {
 
-  .line-break {
-    display: block;
-    height: 1px;
-  }
+      .all-skill-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: space-between;
+        gap: 10px;
+        text-align: center;
+        flex-wrap: wrap;
 
-  .about-infos {
-    margin-top: 1rem;
+        .skill-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-block: 20px;
+          flex: 1 1 100px;
+          overflow: hidden;
+          transition: flex 0.5s ease;
 
-    .all-skill-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      justify-content: space-between;
-      gap: 10px;
-      text-align: center;
-      flex-wrap: wrap;
-
-      .skill-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-block: 20px;
-        flex: 1 1 100px;
-        overflow: hidden;
-        transition: flex 1s ease;
-
-        .expanded {
-          height: auto;
-          flex: 1 1 100%;
-        }
-
-        h6 {
-          cursor: pointer;
-        }
-
-        .description {
-          margin: 10px;
-        }
-
-        .hidden {
-          display: none;
-        }
-
-        .underline-brown {
-          background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-          background-repeat: no-repeat;
-          background-size: 100% 0.2em;
-          background-position: 0 88%;
-          transition: background-size 0.25s ease-in;
-
-          &:hover {
-            background-size: 100% 88%;
+          .expanded {
+            height: auto;
+            flex: 1 1 100%;
           }
 
-        }
+          h6 {
+            cursor: pointer;
+          }
 
-        .underline-brown:hover,
-        .clicked {
-          background-size: 100% 88%;
-        }
+          .description {
+            margin: 10px;
+            color: $light-brown;
+          }
 
+          .hidden {
+            display: none;
+          }
+
+          .underline-brown {
+            background-image: linear-gradient(120deg, $superlight-brown 0%, $brown 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.2em;
+            background-position: 0 88%;
+            transition: background-size 0.25s ease-in;
+
+            &:hover {
+              background-size: 100% 88%;
+            }
+          }
+
+          .underline-brown:hover,
+          .clicked {
+            background-size: 100% 88%;
+          }
+        }
       }
-    }
 
-    p {
-      color: grey;
+      p {
+        color: $grey;
+      }
     }
   }
 
   .about-story {
-    margin-top: 1rem;
+    margin-top: 70px;
 
-    .story-infos {
-      color: grey;
+    .about-story-infos {
+      .h5-title {
+        margin-bottom: 30px;
+      }
+
+      .about-story-text {
+        p {
+          color: $grey;
+        }
+      }
     }
 
     .about-pic {
       float: right;
-      max-width: 45%;
+      max-width: 60%;
+      padding-left: 45px;
+      padding-top: 50px;
+      padding-bottom: 25px;
 
       img {
         max-width: 100%;
@@ -115,6 +124,6 @@
 
 @media screen and (max-width: 800px) {
   .container .about-infos .all-skill-cards {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Par exemple, 150px pour les écrans plus petits */
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
