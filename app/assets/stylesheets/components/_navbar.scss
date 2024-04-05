@@ -1,3 +1,5 @@
+@import "config/colors";
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -5,14 +7,35 @@
   .navbar-collapse {
     flex-grow: 0;
   }
+
   .navbar-initial {
     font-size: 25px;
     text-decoration: none;
-    color: black;
+    color: $brown;
     font-weight: 900;
   }
 
   .nav-item {
     padding-left: 20px;
+    padding-right: 10px;
+    padding-block: 10px;
+  }
+
+  .nav-link {
+    a {
+      color: inherit;
+      &:hover {
+        color: $brown;
+        border-color: $brown;
+        border-radius: 25px;
+      }
+    }
+  }
+
+  .nav-link:hover,
+  .nav-item.active .nav-link {
+    color: $brown!important;
+    border-color: $brown;
+    border-radius: 25px;
   }
 }

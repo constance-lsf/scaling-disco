@@ -5,6 +5,8 @@
     list-style-type: none;
     display: flex;
     padding-left: 0px;
+    padding-top: 45px;
+    padding-bottom: 30px;
 
     .li-projects {
       padding: 10px;
@@ -13,27 +15,39 @@
       border: black 1px solid;
       border-radius: 30px;
 
+      &:hover {
+        color: white;
+        background-color: $brown;
+        border: $brown 1px solid;
+      }
+
+      .li-projects.active {
+        color: white;
+        background-color: $brown;
+        border: $brown 1px solid;
+      }
+
+      .li-projects.active a {
+        color: white;
+        background-color: $brown;
+        border: $brown 1px solid;
+      }
+
       a {
         text-decoration: none;
         color: black;
 
         &.active {
+          color: white;
           background-color: $brown;
           border: $brown 1px solid;
-          color: white;
 
           &:hover {
+            color: white;
             background-color: $brown;
             border: $brown 1px solid;
-            color: white;
           }
         }
-      }
-
-      &:hover {
-        background-color: $brown;
-        border: $brown 1px solid;
-        color: white;
       }
     }
   }
