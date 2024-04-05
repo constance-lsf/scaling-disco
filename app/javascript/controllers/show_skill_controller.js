@@ -19,6 +19,7 @@ export default class extends Controller {
 
     card.classList.toggle("expanded");
 
+    console.log(card.classList.contains("expanded"));
 
     if (card.classList.contains("expanded")) {
       description.classList.remove("hidden");

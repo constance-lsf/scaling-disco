@@ -36,21 +36,23 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       justify-content: space-between;
-      gap: 20px;
+      gap: 10px;
       text-align: center;
+      flex-wrap: wrap;
 
       .skill-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
-        height: 100px;
+        margin-block: 20px;
+        flex: 1 1 100px;
         overflow: hidden;
-        transition: height 0.3s ease;
+        transition: flex 1s ease;
 
         .expanded {
           height: auto;
+          flex: 1 1 100%;
         }
 
         h6 {
