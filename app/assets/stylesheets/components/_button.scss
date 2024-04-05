@@ -10,22 +10,20 @@
   margin-left: 40px;
   border-radius: 5px;
 
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover {
-    color: $light-brown;
-    transition: 0.3s;
-  }
-
   a {
     text-decoration: none;
     color: inherit;
     margin-left: 20px;
 
+    background-image: linear-gradient(120deg, $superlight-brown 0%, $brown 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+
     &:hover {
-      color: $light-brown;
-      transition: 0.3s;
+      color: black;
+      background-size: 100% 88%;
     }
   }
 }

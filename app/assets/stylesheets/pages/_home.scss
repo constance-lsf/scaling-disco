@@ -2,7 +2,7 @@
 
 .container {
   min-height: 100vh;
-  margin-block: 5em;
+  margin-block: 3em;
 
   .profile-pic {
     border-radius: 50%;
@@ -16,17 +16,26 @@
     align-items: center;
 
     .text-section {
-      // top: 0;
-      // left: 0;
       text-align: right;
       margin-right: -45px;
-      margin-top: -60px;
+      margin-top: -10px;
       z-index: 1;
 
       p {
         margin-left: 15px;
-        color: $brown;
+        color: $grey;
       }
+    }
+
+    .style-btn {
+      color: $brown;
+      cursor: auto;
+      background-color: transparent;
+      border: $brown 1px solid;
+      border-radius: 35px;
+      padding: 10px 20px;
+      margin-bottom: -15px;
+      font-size: 25px;
     }
 
     .short-description {
