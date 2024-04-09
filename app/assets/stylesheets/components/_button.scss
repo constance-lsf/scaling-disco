@@ -27,3 +27,22 @@
     }
   }
 }
+
+.btn-back {
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 5px;
+
+    &:hover {
+      color: $brown;
+      transition: 0.3s;
+    }
+  }
+
+  &:hover {
+    color: $brown;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}

@@ -1,11 +1,15 @@
+@import "config/colors";
+
 .container {
 
-  .h1-big-title {
+  .h1-big-title-contact {
     margin-block: 100px;
     text-align: center;
   }
 
   .contact-form {
+    display: flex;
+    justify-content: center;
     text-align: center;
 
     input[type='text'],
@@ -15,11 +19,8 @@
       border-radius: 0;
       border-bottom: 1px solid black;
       padding: 10px;
-      margin-top: 25px;
-      font-size: 16px;
-      color: black;
       text-align: center;
-      max-width: 500px;
+      width: 400px;
 
       &::placeholder {
         color: black;
@@ -30,18 +31,19 @@
       display: none;
     }
 
-    button {
+    .btn {
       margin-top: 20px;
-      border: none;
+      border: $brown solid 1px;
+      color: $brown;
+      border-radius: 25px;
       padding: 10px 20px;
-      padding-top: 25px;
       font-size: 16px;
-      background-color: black;
-      color: white;
       cursor: pointer;
 
       &:hover {
-        background-color: #333;
+        background-color: $brown;
+        border: $brown solid 1px;
+        color: white;
       }
     }
   }

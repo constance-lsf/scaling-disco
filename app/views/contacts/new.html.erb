@@ -1,6 +1,11 @@
 <div class="container">
 
-  <h1 class="h1-big-title">And this is not over...</h1>
+  <div class="btn-back" data-controller="back-button">
+    <i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i>
+    <%= link_to 'back', 'javascript:history.go(-1)', id: 'backLink' %>
+  </div>
+
+  <h1 class="h1-big-title-contact">And what if this were only the beginning?</h1>
 
   <div class="contact-form">
     <%= simple_form_for contact_path do |f| %>
