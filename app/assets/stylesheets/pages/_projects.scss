@@ -80,10 +80,28 @@
     .project-pic {
       flex: 1;
 
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
+      .mobile-pic-container {
+        display: flex;
+
+        .mobile-pic-item {
+          flex: 1;
+          margin-right: 10px;
+          width: 30%;
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 25px;
+          }
+        }
+      }
+
+      .web-pic {
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
+        }
       }
     }
 
@@ -99,6 +117,11 @@
       a {
         text-decoration: none;
         color: white;
+
+        &:hover {
+          color: $brown;
+          transition: 0.3s ease;
+        }
       }
     }
   }
@@ -145,6 +168,11 @@
       a {
         text-decoration: none;
         color: black;
+
+        &:hover {
+          color: $brown;
+          transition: 0.3s ease;
+        }
       }
     }
   }

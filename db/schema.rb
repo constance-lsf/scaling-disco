@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_02_141830) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_09_194524) do
   create_table "abouts", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -44,6 +44,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_02_141830) do
     t.datetime "updated_at", null: false
     t.string "github_link"
     t.string "web_link"
+    t.string "picture"
+    t.string "project_type"
+    t.text "pictures"
   end
 
 end

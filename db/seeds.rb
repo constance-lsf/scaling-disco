@@ -30,8 +30,9 @@ About.create!(
 
 Project.create!(
   title: 'Social Media Platform',
-  description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4.
-  Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
+  project_type: 'mobile',
+  pictures: ['TOIS-1.feed.png', 'TOIS-2.discover.png', 'TOIS-4.perso-profile.png'],
+  description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4. Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
   skill: 'Ruby on Rails, JavaScript',
   date: '04-03-2024 - 2 weeks',
   github_link: 'https://github.com/achillllllllle/tois'
@@ -39,6 +40,8 @@ Project.create!(
 
 Project.create!(
   title: 'Airbnb Clone',
+  project_type: 'web',
+  picture: 'UNBL-1.feed.png',
   description: 'A platform built with Ruby on Rails and Javascript in a team of 4.
   Users can create accounts, add their own activities called "wonders", and book some wonders.',
   skill: 'Ruby on Rails, JavaScript',
