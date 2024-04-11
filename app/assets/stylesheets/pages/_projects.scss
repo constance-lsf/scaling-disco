@@ -24,34 +24,28 @@
         color: white;
         background-color: $brown;
         border: $brown 1px solid;
+
+        a {
+          color: white;
+        }
       }
 
-      .li-projects.active {
+      &.active {
         color: white;
         background-color: $brown;
         border: $brown 1px solid;
-      }
 
-      .li-projects.active a {
-        color: white;
-        background-color: $brown;
-        border: $brown 1px solid;
+        a {
+          color: white;
+        }
       }
 
       a {
         text-decoration: none;
         color: black;
 
-        &.active {
+        &:hover {
           color: white;
-          background-color: $brown;
-          border: $brown 1px solid;
-
-          &:hover {
-            color: white;
-            background-color: $brown;
-            border: $brown 1px solid;
-          }
         }
       }
     }
