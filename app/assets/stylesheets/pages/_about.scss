@@ -1,8 +1,8 @@
 @import "config/colors";
 
 .container {
-  min-height: 70vh;
-  max-width: 992px!important;
+  // min-height: 70vh;
+  // max-width: 992px!important;
 
   .h1-big-title {
     margin-block: 100px;
@@ -102,16 +102,19 @@
   }
 
   .about-story {
-    margin-top: 70px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 
     .about-story-infos {
       .h5-title {
         margin-bottom: 30px;
+        color: $brown;
       }
 
       .about-story-text {
         p {
           color: $grey;
+          margin-bottom: 0;
         }
 
         .highlighted {
@@ -125,14 +128,48 @@
       float: right;
       max-width: 60%;
       padding-left: 45px;
-      padding-top: 50px;
-      padding-bottom: 25px;
+      // padding-top: 50px;
+      padding-bottom: 100px;
 
       img {
         max-width: 100%;
         height: auto;
         border-radius: 25px;
       }
+    }
+  }
+
+  .about-story-personal {
+
+    .short-story {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+
+      .btn-center {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    p {
+      color: $grey;
+      margin-bottom: 0;
+    }
+
+    .highlighted {
+      color: $brown;
+      font-weight: bold;
     }
   }
 }
