@@ -1,8 +1,7 @@
 <div class="container">
 
   <div class="btn-back" data-controller="back-button">
-    <i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i>
-    <%= link_to 'back', 'javascript:history.go(-1)', id: 'backLink' %>
+    <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
 
   <h1 class="h1-big-title">Discover my projects</h1>

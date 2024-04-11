@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  color: #333;
+  font-size: 20px;
 
   padding: 10px 15px;
   margin-left: 40px;
@@ -14,6 +14,8 @@
     text-decoration: none;
     color: inherit;
     margin-left: 20px;
+
+    font-size: 20px;
 
     background-image: linear-gradient(120deg, $superlight-brown 0%, $brown 100%);
     background-repeat: no-repeat;
@@ -29,20 +31,26 @@
 }
 
 .btn-back {
+  margin-top: 20px;
+  i {
+    margin-right: 10px;
+  }
   a {
     text-decoration: none;
     color: inherit;
-    margin-left: 5px;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 16px;
 
     &:hover {
       color: $brown;
+      background-color: $grey-beige;
+      padding: 10px 15px;
+      border-radius: 10px;
+      width: 100px;
+      text-align: center;
       transition: 0.3s;
+      cursor: pointer;
     }
-  }
-
-  &:hover {
-    color: $brown;
-    transition: 0.3s;
-    cursor: pointer;
   }
 }
