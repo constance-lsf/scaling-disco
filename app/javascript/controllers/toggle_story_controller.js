@@ -11,6 +11,5 @@ export default class extends Controller {
   toggle() {
     console.log("toggle-story target element:", this.hiddenTextTarget);
     this.hiddenTextTarget.classList.toggle("hidden");
-    // this.element.classList.toggle("hidden");
   }
 }
