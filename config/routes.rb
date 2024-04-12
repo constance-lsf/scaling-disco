@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   root 'homes#show'
 
-  resources :abouts, only: [:show]
+  resources :abouts, only: [:show] do
+    get 'my_story', on: :member
+    get 'my_skills', on: :member
+  end
 
   resources :projects, only: [:index]
 

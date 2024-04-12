@@ -4,4 +4,8 @@ class AboutsController < ApplicationController
   def show
     @about = About.find(params[:id])
   end
+
+  def my_story; end
+
+  def my_skills; end
 end
