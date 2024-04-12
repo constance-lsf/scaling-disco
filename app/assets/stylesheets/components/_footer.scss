@@ -1,46 +1,56 @@
 @import "config/colors";
 @import "config/fonts";
 
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  flex-shrink: 0; /* Empêche le footer de réduire en hauteur */
+
+  background-color: transparent;
+  color: $light-brown;
   font-family: $headers-font;
   font-size: 13px;
+  padding: 20px;
 
-  position: relative;
-  margin-top: auto;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 50px;
-  color: rgba(0,0,0,0.3);
+  .footer-left {
+    flex: 1;
+    font-size: 14px;
+  }
 
-  .footer-mail {
+  .footer-right {
+    flex: 1;
+    text-align: right;
+
     a {
+      color: $light-brown;
       text-decoration: none;
-      color: lightgray;
-      font-family: $headers-font;
-      font-size: 13px;
 
       &:hover {
-        color: $light-brown;
-        transition: 0.3s;
+        color: $brown;
+        transition: 0.3s ease;
       }
     }
   }
 
-  .footer-links {
-    a {
-      color: $grey;
-      opacity: 0.15;
-      text-decoration: none;
-      font-size: 30px;
-      padding: 0px 10px;
-    }
+  .footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 
-    a:hover {
-      opacity: 1;
+    a {
+      margin: 0 10px;
+
+      i {
+        font-size: 30px;
+        color: $light-brown;
+
+        &:hover {
+          color: $brown;
+          transition: 0.3s ease;
+        }
+      }
     }
   }
 }
