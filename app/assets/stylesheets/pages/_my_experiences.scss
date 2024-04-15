@@ -4,7 +4,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);
   background-size: cover;
   background-position: center;
-  padding: 200px 0;
+  padding: 150px 0;
 
   position: relative;
 
@@ -21,53 +21,60 @@
 
     h1 {
       margin: 0;
-      // color: white;
-      // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
       font-size: 32px;
       font-weight: bold;
     }
 
     p {
       font-size: 25px;
-      // color: white;
       opacity: .7;
-      // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
   }
 }
 
-.my-experience-container {
+.experience-text {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding-block: 8rem;
 
-  .about-experiences {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  p {
+    margin-left: 8rem;
+    font-size: 17px;
+  }
+}
+
+.background {
+
+  .my-experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
 
     .experience {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 115px;
-
-      background-color: lightgray;
 
       .image {
-        width: 80%;
+        // width: 80%;
+        // height: auto;
+        // margin-right: 70px;
         height: auto;
-        margin-right: 70px;
+        margin-left: 70px;
+        margin-right: 100px;
 
         img {
           border-radius: 15px;
-          max-width: 450px;
+          // max-width: 450px;
+          max-width: 300px;
           max-height: 100%;
         }
       }
 
       .text {
-        // margin-top: 20px;
+        margin-block: 15rem;
       }
     }
   }
