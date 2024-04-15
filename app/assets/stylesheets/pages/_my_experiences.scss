@@ -1,181 +1,74 @@
 @import "config/colors";
 
-.container {
-  // min-height: 70vh;
-  // max-width: 992px!important;
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
 
-  .h1-big-title {
-    margin-block: 100px;
-    line-height: 55px;
+  position: relative;
+
+  .btn-back {
+    position: absolute;
+    top: 0;
   }
 
-  .line-break {
-    display: block;
-    height: 1px;
-  }
-
-  .arrow-icon {
+  .exp-title {
+    line-height: 60px;
     text-align: center;
-  }
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 
-  .about-skills {
-    margin-top: 70px;
-    margin-bottom: 30px;
-
-    h5 {
-      .h5-title {
-        margin-left: 10px;
-      }
-    }
-
-    p {
-      color: $grey;
-    }
-
-    .about-skills-infos {
-
-      .all-skill-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        justify-content: space-between;
-        gap: 10px;
-        text-align: center;
-        padding-block: 30px;
-
-        .skill-card {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-block: 5px;
-
-          border: 1px solid grey;
-          padding: 25px;
-          border-radius: 15px;
-          margin-right: 20px;
-
-          .expanded {
-            height: auto;
-            flex: 1 1 100%;
-          }
-
-          h6 {
-            cursor: pointer;
-            margin-bottom: 0;
-
-            .text-degrade {
-              background: linear-gradient(70deg, $superlight-brown 0%, $brown 100%);
-              -webkit-background-clip: text;
-              color: transparent;
-
-              &:hover {
-                color:white
-              }
-            }
-          }
-
-          .description {
-            margin: 10px;
-            color: $light-brown;
-          }
-
-          .hidden {
-            display: none;
-          }
-
-          &:hover {
-            background: linear-gradient(70deg, $superlight-brown 0%, $brown 100%);
-            border: transparent;
-            transition: flex 0.5s ease;
-
-            // h6 {
-            //   color: white;
-            // }
-
-            p {
-              color: white;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .about-story {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-
-    .about-story-infos {
-      .h5-title {
-        margin-bottom: 30px;
-        color: $brown;
-      }
-
-      .about-story-text {
-        p {
-          color: $grey;
-          margin-bottom: 0;
-        }
-
-        .highlighted {
-          color: $brown;
-          font-weight: bold;
-        }
-      }
-    }
-
-    .about-pic {
-      float: right;
-      max-width: 60%;
-      padding-left: 45px;
-      // padding-top: 50px;
-      padding-bottom: 100px;
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 25px;
-      }
-    }
-  }
-
-  .about-story-personal {
-
-    .short-story {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-
-      p {
-        font-size: 17px;
-        margin-bottom: 10px;
-      }
-
-      .btn-center {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    p {
-      color: $grey;
-      margin-bottom: 0;
-    }
-
-    .highlighted {
-      color: $brown;
+    h1 {
+      margin: 0;
+      // color: white;
+      // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      font-size: 32px;
       font-weight: bold;
+    }
+
+    p {
+      font-size: 25px;
+      // color: white;
+      opacity: .7;
+      // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
   }
 }
 
-@media screen and (max-width: 800px) {
-  .container .about-infos .all-skill-cards {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.my-experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+
+  .about-experiences {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .experience {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 115px;
+
+      background-color: lightgray;
+
+      .image {
+        width: 80%;
+        height: auto;
+        margin-right: 70px;
+
+        img {
+          border-radius: 15px;
+          max-width: 450px;
+          max-height: 100%;
+        }
+      }
+
+      .text {
+        // margin-top: 20px;
+      }
+    }
   }
 }

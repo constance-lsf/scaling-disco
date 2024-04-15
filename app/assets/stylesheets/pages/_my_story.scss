@@ -1,6 +1,6 @@
 @import "config/colors";
 
-.container {
+.my-story-container {
 
   .line-break {
     display: block;
@@ -9,11 +9,12 @@
 
   .about-story {
     display: flex;
+    align-items: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
 
     .story-text {
-      padding-left: 30px;
+      padding-left: 60px;
 
       .h5-title {
         margin-bottom: 30px;
@@ -29,12 +30,23 @@
         color: $brown;
         font-weight: bold;
       }
+
+      a {
+        color: $brown;
+        // text-decoration: underline;
+
+        &:hover {
+          color: $dark-brown;
+          transition: 0.3s ease;
+          // text-decoration: underline;
+        }
+      }
     }
 
     .story-picture {
       max-width: 60%;
       margin-right: 50px;
-      padding-bottom: 100px;
+      // padding-bottom: 100px;
 
       img {
         max-width: 100%;
