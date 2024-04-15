@@ -1,0 +1,87 @@
+@import "config/colors";
+
+.container {
+
+  .line-break {
+    display: block;
+    height: 1px;
+  }
+
+  .about-story {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .story-text {
+      padding-left: 30px;
+
+      .h5-title {
+        margin-bottom: 30px;
+        color: $brown;
+      }
+
+      p {
+        color: $grey;
+        margin-bottom: 0;
+      }
+
+      .highlighted {
+        color: $brown;
+        font-weight: bold;
+      }
+    }
+
+    .story-picture {
+      max-width: 60%;
+      margin-right: 50px;
+      padding-bottom: 100px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;
+      }
+    }
+  }
+
+
+  .about-story-personal {
+
+    .short-story {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+
+      .btn-center {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    p {
+      color: $grey;
+      margin-bottom: 0;
+    }
+
+    .highlighted {
+      color: $brown;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .about-infos .all-skill-cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
