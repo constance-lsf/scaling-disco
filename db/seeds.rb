@@ -42,7 +42,7 @@ Project.create!(
 Project.create!(
   title: 'UNBELIEVABLY - Airbnb Clone',
   project_type: 'web',
-  picture: 'UNBL-1.feed.png',
+  pictures: ['UNBL-1.feed.png', 'UNBL-3.post.png'],
   description: 'A platform built with Ruby on Rails and Javascript in a team of 4.
   Users can create accounts, add their own activities called "wonders", and book some wonders.',
   skill: 'Ruby on Rails, JavaScript',
