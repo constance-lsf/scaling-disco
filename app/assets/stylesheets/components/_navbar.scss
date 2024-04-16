@@ -41,4 +41,9 @@
     border-color: $brown;
     border-radius: 25px;
   }
+
+  .dropdown-item:hover,
+  .dropdown-item.active .dropdown-menu {
+    background-color: $light-brown;
+  }
 }
