@@ -4,7 +4,42 @@
     <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
 
-  <div class="about-story">
+  <div class="about-title">
+    <h1>Lorem ipsum dolor sit amet,
+    <br>consectetur adipiscing elit.</h1>
+  </div>
+
+  <hr>
+
+  <div class="about-text">
+    <div class="arrow-icon col-lg-1">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+    <div class="story col-lg-5">
+      <h4>My story</h4>
+      <p>If I were to start somewhere, I would say that I have always been very attracted to new technologies: my memories go back to the time of my first Word documents (<em>2005? 2006?</em>). This curiosity has driven me to explore numerous horizons since my early age, both in my personal and professional life.</p>
+      <h6>Added to that, growing up in a military family, living to the rhythm of the many relocations that undoubtedly enriched my journey and my worldview.</h6>
+
+      <p>After <%= link_to "completing my studies", my_experiences_about_path %> and going through this COVID period full of twists and turns and lockdown, I felt the need to embark on a different kind of adventure. What was supposed to be a simple one-month trip to Mexico to celebrate the end of my academic journey turned into an incredible year of travel, encounters, work, and discoveries in Australia.<br>
+
+      <br>Upon returning to France, the question of my professional future arose. After being offered a position as a communication officer, I reached a turning point where I realized that, although I still enjoyed this profession, I felt that something was missing.
+      That's when an idea that had been brewing for a year resurfaced: I had heard about a Web Developer training program at Le Wagon. Despite my doubts, the fear of the unknown (<em>has it ever stopped me, after all?</em>), I decided to embark on this career change.</p>
+      <h6>Having always been attracted to reflection and logic, I believe I have the patience needed to delve into this field.</h6>
+
+      <p>So here I am, ready to explore new perspectives, to combine my passion for communication with my budding skills in web development. Because after all, why not me?<br>
+
+      <br><em>Best regards</em>,<br>
+
+      <br>Constance</p>
+    </div>
+
+    <div class="about-picture col-lg-6">
+      <img src="/assets/oz1.jpg" alt="australia-pic">
+    </div>
+  </div>
+
+  <!--<div class="about-story">
 
     <div class="story-picture">
       <img src="/assets/oz1.jpg" alt="australia-pic">
@@ -27,7 +62,7 @@
 
       <br>Constance</p>
     </div>
-  </div>
+  </div>-->
 
   <!--<div class="about-story-personal" data-controller="toggle-story">
 

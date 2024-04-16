@@ -2,8 +2,9 @@
 
 .projects-container {
 
-  .h1-big-title {
-    margin-block: 100px;
+  .projects-title {
+    margin-top: 125px;
+    margin-bottom: 80px;
   }
 
   .ul-projects {
@@ -11,7 +12,6 @@
     display: flex;
     padding-left: 0px;
     padding-top: 45px;
-    padding-bottom: 30px;
 
     .li-projects {
       padding: 10px;
@@ -65,8 +65,8 @@
     border-radius: 25px;
     padding-block: 35px;
     padding-inline: 45px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     p {
       color: grey;
@@ -135,8 +135,8 @@
     border-radius: 25px;
     padding-block: 35px;
     padding-inline: 45px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     p {
       color: grey;

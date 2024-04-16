@@ -2,6 +2,62 @@
 
 .my-story-container {
 
+  .about-title {
+    margin-block: 125px;
+  }
+
+  .about-text {
+    display: flex;
+    margin-block: 100px;
+
+    .story {
+      padding-right: 70px;
+
+      h4 {
+        margin-bottom: 40px;
+      }
+
+      h6 {
+        color: $light-brown;
+        line-height: 22px;
+        margin-inline: 50px;
+        margin-block: 30px;
+      }
+
+      p{
+        a {
+          color: $brown;
+
+          &:hover {
+            color: $dark-brown;
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+
+  .about-picture {
+    img {
+      max-width: 100%;
+      height: auto;
+      // border-radius: 25px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .line-break {
     display: block;
     height: 1px;
@@ -55,7 +111,6 @@
       }
     }
   }
-
 
   .about-story-personal {
 

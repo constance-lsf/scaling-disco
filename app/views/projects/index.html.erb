@@ -4,16 +4,19 @@
     <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
 
-  <h1 class="h1-big-title">Discover my projects</h1>
+  <div class="projects-title">
+    <h1>Discover my projects</h1>
+
+    <ul class="ul-projects" data-controller="tab-category" data-tab-target="tab">
+      <li class="li-projects" data-action="click->tab-category#changeTab" data-tab="all"><%= link_to "All", projects_path %></li>
+      <% @skills.each do |skill| %>
+        <li class="li-projects tab" data-action="click->tab-category#changeTab" data-tab="<%= skill %>" data-skill="<%= skill %>"><%= link_to skill, projects_path(skill: skill) %></li>
+      <% end %>
+    </ul>
+  </div>
 
   <hr>
 
-  <ul class="ul-projects" data-controller="tab-category" data-tab-target="tab">
-    <li class="li-projects" data-action="click->tab-category#changeTab" data-tab="all"><%= link_to "All", projects_path %></li>
-    <% @skills.each do |skill| %>
-      <li class="li-projects tab" data-action="click->tab-category#changeTab" data-tab="<%= skill %>" data-skill="<%= skill %>"><%= link_to skill, projects_path(skill: skill) %></li>
-    <% end %>
-  </ul>
 
   <% @projects.each do |project| %>
     <div class="project-card <%= cycle('project-card-black', 'project-card-grey') %>" data-skill="<%= project.skill %>" data-project-target="project">

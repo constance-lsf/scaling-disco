@@ -1,10 +1,23 @@
 @import "config/colors";
 
+.my-exp-container {
+  .exp-title {
+    margin-block: 125px;
+    display: flex;
+    align-items: center;
+
+    p {
+      // padding-left: 150px;
+      font-size: 17px;
+      opacity: .7;
+    }
+  }
+}
+
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/lsd50.jpeg');
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
 
   position: relative;
 
@@ -18,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 8rem;
+    margin-block: 125px;
 
     color: white;
 
@@ -55,7 +68,7 @@
         margin-right: 100px;
 
         img {
-          border-radius: 15px;
+          // border-radius: 15px;
           // max-width: 450px;
           max-width: 300px;
           max-height: 100%;

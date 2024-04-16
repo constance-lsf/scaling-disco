@@ -1,33 +1,26 @@
 @import "config/colors";
 
 .my-skills-container {
-  // min-height: 70vh;
-  // max-width: 992px!important;
 
-  .h1-big-title {
-    margin-block: 100px;
-    line-height: 55px;
-  }
-
-  .line-break {
-    display: block;
-    height: 1px;
-  }
-
-  .arrow-icon {
-    text-align: center;
+  .about-title {
+    margin-block: 125px;
   }
 
   .about-skills {
-    margin-top: 70px;
-    margin-bottom: 30px;
+    margin-block: 100px;
 
-    h5 {
-      .h5-title {
-        margin-left: 10px;
-      }
+    h4 {
+      margin-bottom: 40px;
     }
+  }
 
+
+
+
+
+
+
+  .about-skills {
     p {
       color: $grey;
     }

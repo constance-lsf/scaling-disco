@@ -1,13 +1,15 @@
-<div class="banner">
-  <div class="container">
-    <div class="btn-back" data-controller="back-button">
-      <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
-    </div>
-    <div class="experience-text">
-      <h1>My educational path has been punctuated by a desire to learn and discover new things</h1>
-      <p class="exp-description"> If you've read my story, then you'll understand why I chose an educational path that reflects a thirst for discovery and learning. I have always been curious and eager to learn, which is why I have always been attracted to the world of digital and new technologies.</p>
-    </div>
+<div class="container my-exp-container">
+  <div class="btn-back" data-controller="back-button">
+    <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
+
+  <div class="exp-title">
+    <h1 class="col-lg-6">A desire to learn and
+    <br>discover new things</h1>
+    <p class="exp-description col-lg-6"> If you've read my story, then you'll understand why I chose an educational path that reflects a thirst for discovery and learning. I have always been curious and eager to learn, which is why I have always been attracted to the world of digital and new technologies.</p>
+  </div>
+
+  <hr>
 </div>
 
 <div class="background">
