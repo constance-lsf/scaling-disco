@@ -17,6 +17,43 @@
 
   <hr>
 
+  <% @projects.each do |project| %>
+    <div class="project" data-skill="<%= project.skill %>" data-project-target="project">
+      <div class="project-title">
+        <h4><%= project.title.upcase %></h4>
+        <h5>TECH : <%= project.skill.upcase %></h5>
+        <p><%= project.date.strftime('%d-%m-%Y') %> - <%= project.duration %></p>
+        <p><%= project.description %></p>
+        <div class="btn-degrade-small">
+          <i class="fa-solid fa-arrow-right"></i>
+          <% if project.github_link.present? %>
+            <%= link_to "Github", project.github_link, :target => "_blank" %>
+          <% end %>
+          <% if project.web_link.present? %>
+            <%= link_to "See more", project.web_link, :target => "_blank" %>
+          <% end %>
+        </div>
+      </div>
+
+
+      <div class="project-card">
+        <div class="project-pic <%= project.project_type == 'web' ? 'web-pic' : 'mobile-pic' %>">
+          <% if project.project_type == 'web' %>
+            <%= image_tag project.picture, class: 'web-pic' if project.picture.present? %>
+          <% else %>
+            <% if project.pictures.present? %>
+              <div class="mobile-pic-container">
+                <% pictures = JSON.parse(project.pictures) %>
+                <% pictures.each do |picture| %>
+                  <%= image_tag asset_path(picture), class: 'mobile-pic-item' %>
+                <% end %>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 
   <% @projects.each do |project| %>
     <div class="project-card <%= cycle('project-card-black', 'project-card-grey') %>" data-skill="<%= project.skill %>" data-project-target="project">

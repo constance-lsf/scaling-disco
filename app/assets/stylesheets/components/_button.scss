@@ -1,7 +1,7 @@
 @import "config/colors";
 @import "config/fonts";
 
-.btn-about {
+.btn-degrade {
   display: flex;
   align-items: center;
 
@@ -17,6 +17,32 @@
     margin-left: 20px;
 
     font-size: 18px;
+
+    background-image: linear-gradient(120deg, $superlight-brown 0%, $brown 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+
+    &:hover {
+      color: black;
+      background-size: 100% 88%;
+    }
+  }
+}
+
+.btn-degrade-small {
+  display: flex;
+  align-items: center;
+
+  font-size: 15px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 20px;
+
+    font-size: 15px;
 
     background-image: linear-gradient(120deg, $superlight-brown 0%, $brown 100%);
     background-repeat: no-repeat;

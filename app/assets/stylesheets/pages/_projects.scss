@@ -17,8 +17,17 @@
       padding: 10px;
       padding-inline: 20px;
       margin-right: 20px;
-      border: black 1px solid;
+      border: $brown 1px solid;
       border-radius: 30px;
+
+      a {
+        text-decoration: none;
+        color: $brown;
+
+        &:hover {
+          color: white;
+        }
+      }
 
       &:hover {
         color: white;
@@ -40,13 +49,54 @@
           color: white;
         }
       }
+    }
+  }
+
+  .project {
+    margin-block: 125px;
+
+    .project-title {
+      margin-bottom: 50px;
+
+      h5 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .project-card {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: $light-brown;
+      border-radius: 25px;
+
+      .mobile-pic-container {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          max-width: 33%;
+          border-radius: 5px;
+        }
+      }
+
+      img {
+        // max-width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: space-between;
 
       a {
         text-decoration: none;
-        color: black;
+        color: white;
 
         &:hover {
-          color: white;
+          color: $brown;
+          transition: 0.3s ease;
         }
       }
     }
