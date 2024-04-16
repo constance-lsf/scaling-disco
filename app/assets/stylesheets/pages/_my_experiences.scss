@@ -1,7 +1,7 @@
 @import "config/colors";
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/lsd50.jpeg');
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -11,36 +11,27 @@
   .btn-back {
     position: absolute;
     top: 0;
+    color: white;
   }
 
-  .exp-title {
-    line-height: 60px;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  .experience-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 8rem;
 
-    h1 {
-      margin: 0;
-      font-size: 32px;
-      font-weight: bold;
+    color: white;
+
+    h3 {
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      line-height: 45px;
     }
 
     p {
-      font-size: 25px;
+      margin-left: 8rem;
+      font-size: 17px;
       opacity: .7;
     }
-  }
-}
-
-.experience-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-block: 8rem;
-
-  p {
-    margin-left: 8rem;
-    font-size: 17px;
   }
 }
 
