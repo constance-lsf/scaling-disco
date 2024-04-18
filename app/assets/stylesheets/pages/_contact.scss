@@ -1,9 +1,8 @@
 @import "config/colors";
-@import "config/fonts";
 
 .contact-container {
 
-  .h1-big-title-contact {
+  .contact-title {
     margin-block: 100px;
     text-align: center;
   }
@@ -13,7 +12,6 @@
     justify-content: center;
     text-align: center;
 
-    font-family: $body-font;
     margin-bottom: 70px;
 
     input[type='text'],
@@ -28,7 +26,9 @@
       margin-bottom: 40px;
 
       &::placeholder {
+        // color: $light-brown;
         color: black;
+        opacity: 0.5;
       }
     }
 

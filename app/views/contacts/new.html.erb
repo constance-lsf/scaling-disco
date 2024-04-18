@@ -4,13 +4,13 @@
     <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
 
-  <h1 class="h1-big-title-contact">And what if this were only the beginning?</h1>
+  <h5 class="contact-title">And what if this were only the beginning?</h5>
 
   <div class="contact-form">
     <%= simple_form_for contact_path do |f| %>
       <%= f.input :name, placeholder: "What's your name?" %>
       <%= f.input :email, placeholder: "What's your mail address?" %>
-      <%= f.input :message, placeholder: "Tell me what you want..." %>
+      <%= f.input :message, placeholder: "What would you like to talk about?" %>
       <%= f.button :submit, value: "Send me your message" %>
     <% end %>
   </div>
