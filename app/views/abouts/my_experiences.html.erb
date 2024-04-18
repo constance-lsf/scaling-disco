@@ -3,67 +3,46 @@
     <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
 
+  <!--<div class="exp-title">
+    <h1 class="col-lg-5">My experiences</h1>
+    <p class="exp-description col-lg-7"> From communication to code: If you've read my story, then you'll understand why I chose an educational path that reflects a thirst for discovery and learning.</p>
+  </div>
+
+  <hr>-->
   <div class="exp-title">
-    <h1 class="col-lg-6">A desire to learn and
-    <br>discover new things</h1>
-    <p class="exp-description col-lg-6"> If you've read my story, then you'll understand why I chose an educational path that reflects a thirst for discovery and learning. I have always been curious and eager to learn, which is why I have always been attracted to the world of digital and new technologies.</p>
+    <h5 class="col-lg-4">MY EXPERIENCES</h5>
+    <p class="exp-text col-lg-8">As you probably understood upon arriving on my website, I have just completed a full-stack developer training at Le Wagon, in Paris. This training allowed me to acquire solid technical skills in web development, but also to develop my ability to work in a team, to manage my time and to solve problems. I am now looking for a job as a developer, where I can put my skills to good use and continue to learn and grow.</p>
   </div>
 
-  <hr>
-</div>
-
-<div class="background">
-  <div class="container my-experience-container">
-    <div class="experience">
-      <div class="image">
-        <img src="/assets/oz1.jpg" alt="australia-pic">
-      </div>
-      <div class="text">
-        <h4>As you probably understood upon arriving on my website, I have just completed a full-stack developer training at Le Wagon, in Paris.</h4>
-        <p>This training allowed me to acquire solid technical skills in web development, but also to develop my ability to work in a team, to manage my time and to solve problems.</p>
-      </div>
+  <div class="experiences" data-controller="tab-experience">
+    <div class="exp-tabs">
+      <button class="tablink" data-action="click->tab-experience#openTab" data-tab="tab1">Full-Stack Dev</button>
+      <button class="tablink" data-action="click->tab-experience#openTab" data-tab="tab2">Communication Master Degree</button>
+      <button class="tablink" data-action="click->tab-experience#openTab" data-tab="tab3">Digital License</button>
+      <button class="tablink" data-action="click->tab-experience#openTab" data-tab="tab4">Marketing and sales diploma</button>
     </div>
-  </div>
-</div>
 
-<div class="background" style="background-color: grey">
-  <div class="container my-experience-container">
-    <div class="experience">
-      <div class="image">
-        <img src="/assets/oz1.jpg" alt="australia-pic">
-      </div>
-      <div class="text">
-        <h4>Before completing my studies with a master's degree in Communication</h4>
-        <p>at Audencia SciencesCom in Nantes, all while alternating as a Communication Officer</p>
-      </div>
+    <div id="tab1" class="tabcontent" data-tab-experience-target="tab">
+      <h3>Full-Stack Dev</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in libero hendrerit, dapibus odio placerat, tristique nisi. Mauris lectus mi, euismod et pharetra ac, ullamcorper et dui. Fusce convallis scelerisque blandit. Donec efficitur neque lectus, sed interdum urna tempus quis. Suspendisse at nibh eu sem consequat suscipit vel ac libero. Phasellus laoreet lorem ligula, sed laoreet odio vulputate vitae. Aliquam odio risus, sodales vel egestas eget, viverra in magna. Donec et quam ut diam molestie tincidunt ac in velit. Sed tortor ligula, ullamcorper et dolor eget, mattis lobortis sapien. Cras vitae nunc nec turpis dictum commodo. Sed rutrum volutpat lectus vitae pellentesque. Mauris fringilla arcu vitae nunc ultricies gravida. Aliquam malesuada, sapien vitae blandit euismod, orci quam efficitur mauris, sit amet hendrerit augue lectus vitae nulla. Sed et mauris magna.</p>
     </div>
-  </div>
-</div>
 
-<div class="background">
-  <div class="container my-experience-container">
-    <div class="experience">
-      <div class="image">
-        <img src="/assets/oz1.jpg" alt="australia-pic">
-      </div>
-      <div class="text">
-        <h4>Then, I continued with a bachelor's degree in Digital Marketing</h4>
-        <p>at SUPDEWEB in Toulouse, alternating as a Community Manager</p>
-      </div>
+    <div id="tab2" class="tabcontent" data-tab-experience-target="tab">
+      <h3>Communication Master Degree</h3>
+      <p>Morbi porta nulla tortor, semper interdum risus dignissim sit amet. Duis a tempor urna. Sed rhoncus lorem at interdum pharetra. Vestibulum id augue varius, condimentum libero eget, interdum dolor. Aliquam dui purus, pretium ornare faucibus varius, faucibus eget mauris. Phasellus eu vestibulum felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut viverra orci condimentum, placerat lacus efficitur, tincidunt felis. In fringilla, mi ut ultricies lacinia, urna ante pharetra mi, a vestibulum augue lectus ac dolor. Pellentesque orci urna, feugiat vitae tincidunt vitae, euismod et felis. Aenean libero sem, efficitur quis tempus bibendum, dapibus eu lorem. Vestibulum porta magna vitae nisi molestie, rhoncus pulvinar diam bibendum. Vestibulum blandit, purus facilisis egestas suscipit, libero magna egestas risus, nec rutrum nisi dolor et diam. Aliquam sapien neque, varius et dapibus a, lobortis at felis. Aenean ornare aliquet molestie.</p>
     </div>
-  </div>
-</div>
 
-<div class="background" style="background-color: grey">
-  <div class="container my-experience-container">
-    <div class="experience">
-      <div class="image">
-        <img src="/assets/oz1.jpg" alt="australia-pic">
-      </div>
-      <div class="text">
-        <h4>I started with a DUT in Marketing and Sales Techniques in Saint-Nazaire</h4>
-        <p>where I gained solid foundations in marketing and sales</p>
-      </div>
+    <div id="tab3" class="tabcontent" data-tab-experience-target="tab">
+      <h3>Digital License</h3>
+      <p>Nullam lorem erat, sollicitudin ac sodales non, porta non tortor. Nam id velit egestas, cursus eros at, semper risus. Sed eget vestibulum ipsum. Morbi vehicula arcu eget blandit sollicitudin. Praesent mauris urna, lobortis a quam nec, pretium placerat sem. Mauris sapien velit, elementum ac sapien et, lobortis fermentum risus. Sed accumsan cursus elit, quis egestas leo egestas eget. Fusce nec erat sit amet elit mollis condimentum. Nunc in felis interdum, congue diam vitae, sagittis mauris. Aliquam elementum, magna at facilisis suscipit, lorem erat lacinia quam, ut finibus justo arcu at ex. Donec volutpat, dui et dignissim porta, turpis mauris tincidunt purus, vitae mattis ligula massa a nunc. Nam mauris purus, hendrerit nec condimentum nec, ornare eu tellus. Pellentesque volutpat ligula vel libero aliquam, sed venenatis purus fermentum. Mauris mi lectus, iaculis eu odio sit amet, pharetra mollis erat. Nulla luctus augue ut tristique pretium.</p>
     </div>
+
+    <div id="tab4" class="tabcontent" data-tab-experience-target="tab">
+      <h3>Marketing and sales diploma</h3>
+      <p>Mauris sit amet finibus lectus. Nunc imperdiet diam et auctor imperdiet. Pellentesque dictum lacus et neque vehicula, at venenatis est sagittis. Ut eget elit mauris. Donec in vulputate urna. Nullam accumsan tellus ut purus tempus, mattis lacinia sapien aliquam. Mauris semper magna et orci fringilla, eget elementum justo vehicula.
+      Proin sit amet nunc a odio placerat facilisis sit amet a nibh. Nulla in varius ante, facilisis lobortis ante. Phasellus vestibulum augue lorem, in feugiat libero condimentum ac. Pellentesque condimentum condimentum dignissim. Pellentesque vestibulum erat in dolor molestie molestie. Etiam eleifend diam velit, faucibus aliquet odio tincidunt at. Sed auctor libero et mi varius varius.</p>
+    </div>
+
   </div>
+
 </div>

@@ -17,6 +17,10 @@
     text-decoration: none;
     color: $brown;
     font-weight: 900;
+
+    background-color: $beige;
+    padding: 10px 15px;
+    border-radius: 50%;
   }
 
   .nav-item {
@@ -45,6 +49,7 @@
 
   .dropdown-item:hover,
   .dropdown-item.active .dropdown-menu {
-    background-color: $light-brown;
+    background-color: $beige;
+    color: $brown;
   }
 }

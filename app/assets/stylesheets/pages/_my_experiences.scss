@@ -2,14 +2,48 @@
 
 .my-exp-container {
   .exp-title {
-    margin-block: 125px;
+    margin-block: 100px;
     display: flex;
-    align-items: center;
 
     p {
-      // padding-left: 150px;
       font-size: 17px;
       opacity: .7;
+    }
+  }
+
+  .experiences {
+    .exp-tabs {
+      overflow: hidden;
+    }
+    .tablink {
+      padding: 10px;
+      padding-inline: 20px;
+      margin-right: 5px;
+      border: #9B8269 1px solid;
+      border-radius: 30px;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background: linear-gradient(70deg, $superlight-brown 0%, $brown 100%);
+        border: transparent;
+        transition: flex 0.5s ease;
+      }
+
+      &.active {
+        color: white;
+        background-color: $brown;
+        border: $brown 1px solid;
+      }
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      margin-block: 20px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
     }
   }
 }
@@ -44,49 +78,6 @@
       margin-left: 8rem;
       font-size: 17px;
       opacity: .7;
-    }
-  }
-}
-
-.background {
-
-  .my-experience-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-
-    .experience {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .image {
-        // width: 80%;
-        height: auto;
-        margin-left: 70px;
-        margin-right: 100px;
-
-        img {
-          // border-radius: 15px;
-          // max-width: 450px;
-          max-width: 300px;
-          max-height: 100%;
-        }
-      }
-
-      .text {
-        margin-block: 12rem;
-
-        h4 {
-          margin-bottom: 20px;
-          line-height: 35px;
-        }
-
-        p {
-          font-size: 17px;
-        }
-      }
     }
   }
 }

@@ -1,15 +1,15 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend:wght@100..900&display=swap&family=Lexend:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Poppins", "Helvetica", "sans-serif";
-$headers-font: "Poppins", "Helvetica", "sans-serif";
+$body-font: "Figtree", "Helvetica", "sans-serif";
+$headers-font: "Work Sans", "Helvetica", "sans-serif";
 
-body, p, a {
+body, p {
   font-family: $body-font;
-  font-size: 14px;
+  font-size: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
   font-family: $headers-font;
 }
