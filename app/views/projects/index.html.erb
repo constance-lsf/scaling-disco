@@ -5,7 +5,7 @@
   </div>
 
   <div class="projects-title">
-    <h1>Discover my projects</h1>
+    <h5>Discover my projects</h5>
 
     <ul class="ul-projects" data-controller="tab-category" data-tab-target="tab">
       <li class="li-projects" data-action="click->tab-category#changeTab" data-tab="all"><%= link_to "All", projects_path %></li>
@@ -19,10 +19,22 @@
 
   <% @projects.each do |project| %>
     <div class="project" data-skill="<%= project.skill %>" data-project-target="project">
-      <div class="project-title">
-        <h4><%= project.title %></h4>
-        <h5>TECH : <%= project.skill.upcase %></h5>
-        <p><%= project.date.strftime('%d-%m-%Y') %> - <%= project.duration %></p>
+      <div class="project-infos">
+        <div class="project-infos-title">
+          <h5 class="col-lg-5"><%= project.title %></h5>
+
+          <div class="project-details col-lg-7">
+            <div class="tech">
+              <h6>Tech</h6>
+              <p><%= project.skill.upcase %></p>
+            </div>
+            <div class="duration">
+              <h6>Duration</h6>
+              <p><%= project.date.strftime('%m-%Y') %> - <%= project.duration %></p>
+            </div>
+          </div>
+        </div>
+
         <p><%= project.description %></p>
         <div class="btn-degrade-small">
           <i class="fa-solid fa-arrow-right"></i>
