@@ -3,6 +3,7 @@
 .navbar {
   position: fixed !important;
   width: 100%;
+  z-index: 1000;
 
   justify-content: space-between;
   background: white;
