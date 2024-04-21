@@ -13,12 +13,12 @@
   <div class="card-container">
     <% @projects.each do |project| %>
       <div class="card">
-        <img src="/assets/UNBL-1.feed.png" class="card-img-top" alt="...">
+        <%# <img src="/assets/UNBL-1.feed.png" class="card-img-top" alt="..."> %>
+        <%= image_tag asset_path(project.picture) %>
         <div class="card-body">
           <h5 class="card-title"><%= project.title %></h5>
           <p class="card-text"><%= project.description %></p>
           <div class="project-links">
-            <%# <a href="#" class="btn btn-primary">see more</a> %>
             <div class="btn-degrade-small">
               <i class="fa-solid fa-arrow-right"></i>
               <%= link_to "See more", project.github_link, :target => "_blank" %>

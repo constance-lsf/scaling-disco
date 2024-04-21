@@ -31,6 +31,7 @@ About.create!(
 Project.create!(
   title: 'CULTURE JAM - Social Media Platform',
   project_type: 'mobile',
+  picture: 'TOIS-1.feed.png',
   pictures: ['TOIS-1.feed.png', 'TOIS-2.discover.png', 'TOIS-4.perso-profile.png'],
   description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4. Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
   skill: 'Ruby on Rails, JavaScript',
@@ -42,6 +43,7 @@ Project.create!(
 Project.create!(
   title: 'UNBELIEVABLY - Airbnb Clone',
   project_type: 'web',
+  picture: 'UNBL-1.feed.png',
   pictures: ['UNBL-1.feed.png', 'UNBL-3.post.png'],
   description: 'A platform built with Ruby on Rails and Javascript in a team of 4.
   Users can create accounts, add their own activities called "wonders", and book some wonders.',
