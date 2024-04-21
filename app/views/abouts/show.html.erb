@@ -1,23 +1,102 @@
-<div class="container my-story-container">
+<div class="container about-container">
 
   <div class="btn-back" data-controller="back-button">
     <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
   </div>
 
-  <!--<div class="about-title">
-    <h1>A bit more about who I am
-    <br>and where I come from</h1>
+  <div class="about-page">
+    <div class="about-text">
+      <div class="about-title">
+        <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec.</p>
+      </div>
+      <!--<%# "A desire to learn and discover new things"
+      "A thirst for learning and exploring new horizons"
+      "An eagerness to discover and acquire new knowledge"
+      "A passion for learning and uncovering novel experiences"
+      "A drive to learn and explore fresh perspectives"
+      "An insatiable curiosity for discovering and learning" %>-->
+
+      <div class="about-tabs" data-controller="tab-about">
+        <div class="ab-tabs">
+          <button class="tablink" data-action="click->tab-about#openTab" data-tab="tab1">my story</button>
+          <button class="tablink" data-action="click->tab-about#openTab" data-tab="tab2">my experiences</button>
+          <button class="tablink" data-action="click->tab-about#openTab" data-tab="tab3">my skills</button>
+        </div>
+
+        <div id="tab1" class="tabcontent" data-tab-about-target="tab">
+          <div class="flex-container">
+            <div class="tab-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="tab-description">
+              <h3>my story</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+              <p class="highlighted">Mauris pellentesque a nibh quis semper. In quis placerat eros sit amet viverra leo</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab2" class="tabcontent" data-tab-about-target="tab">
+          <div class="flex-container">
+            <div class="tab-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="tab-description">
+              <h3>my experiences</h3>
+
+              <div class="exp-tabs" data-controller="toggle-exp">
+                <button class="explink" data-action="click->toggle-exp#toggle" data-toggle-exp-target="exp1">full-stack dev</button><br>
+                <div id="exp1" class="expcontent hidden" data-toggle-exp-target="exp">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+                </div>
+
+                <button class="explink" data-action="click->toggle-exp#toggle" data-toggle-exp-target="exp2">communication master degree</button><br>
+                <div id="exp2" class="expcontent hidden" data-toggle-exp-target="exp">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+                </div>
+
+                <button class="explink" data-action="click->toggle-exp#toggle" data-toggle-exp-target="exp3">digital license</button><br>
+                <div id="exp3" class="expcontent hidden" data-toggle-exp-target="exp">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+                </div>
+
+                <button class="explink" data-action="click->toggle-exp#toggle" data-toggle-exp-target="exp4">marketing and sales diploma</button><br>
+                <div id="exp4" class="expcontent hidden" data-toggle-exp-target="exp">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab3" class="tabcontent" data-tab-about-target="tab">
+          <div class="flex-container">
+            <div class="tab-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="tab-description">
+              <h3>my skills</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.
+              <br>Mauris pellentesque a nibh quis semper. In quis placerat eros sit amet viverra leo
+              <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="about-picture">
+      <img src="/assets/oz1.jpg" alt="australia-pic">
+    </div>
   </div>
-  <%# "A desire to learn and discover new things"
-  "A thirst for learning and exploring new horizons"
-  "An eagerness to discover and acquire new knowledge"
-  "A passion for learning and uncovering novel experiences"
-  "A drive to learn and explore fresh perspectives"
-  "An insatiable curiosity for discovering and learning" %>
 
-  <hr>-->
 
-  <div class="about-text">
+
+  <!--<div class="about-text">
 
     <div class="story col-lg-5">
       <%# <button class="btn-lightbrown">MY STORY</button> %>
@@ -41,7 +120,7 @@
     <div class="about-picture col-lg-7">
       <img src="/assets/oz1.jpg" alt="australia-pic">
     </div>
-  </div>
+  </div>-->
 
   <!--<div class="about-story">
 

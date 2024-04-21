@@ -1,165 +1,219 @@
 @import "config/colors";
 
-.my-story-container {
+.about-container {
 
-  .about-title {
-    margin-block: 125px;
-  }
-
-  .btn-lightbrown {
-    color: $brown;
-    cursor: auto;
-    background-color: transparent;
-    border: $brown 1px solid;
-    border-radius: 35px;
-    padding: 10px 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-
-  .about-text {
+  .about-page {
     display: flex;
     margin-block: 100px;
 
-    .story {
-      padding-right: 70px;
+    .about-text {
+      margin-right: 50px;
 
-      h5 {
-        margin-bottom: 35px;
+      .about-title {
+        margin-bottom: 50px;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 600;
+          color: $dark-brown;
+          margin-bottom: 30px;
+        }
       }
 
-      h6 {
-        color: $light-brown;
-        line-height: 22px;
-        margin-inline: 40px;
-        margin-block: 25px;
-      }
+      .about-tabs {
+        .ab-tabs {
+          overflow: hidden;
+          margin-bottom: 50px;
+        }
 
-      p{
-        a {
-          color: $brown;
+        .tablink {
+          padding: 10px;
+          padding-inline: 20px;
+          margin-right: 5px;
+          border: #9B8269 1px solid;
+          border-radius: 30px;
+          background-color: transparent;
+          cursor: pointer;
 
-          &:hover {
-            color: $dark-brown;
-            transition: 0.3s ease;
+          &:hover, &.active {
+            color: white;
+            background: linear-gradient(70deg, $superlight-brown 0%, $brown 100%);
+            border: transparent;
+            transition: flex 0.5s ease;
+          }
+        }
+
+        .tabcontent {
+          display: none;
+          margin-block: 20px;
+
+          .flex-container {
+            display: flex;
+
+            .tab-arrow {
+              margin-right: 50px;
+              font-size: 22px;
+            }
+
+            .tab-description {
+              h3 {
+                font-weight: 600;
+                margin-bottom: 25px;
+              }
+
+              .highlighted {
+                font-size: 18px;
+                color: $brown;
+                font-weight: bold;
+                padding-left: 25px;
+              }
+
+              .exp-tabs {
+                .explink {
+                  font-weight: 600;
+                  color: $brown;
+                  font-size: 20px;
+                  background: none;
+                  border: none;
+                  padding-inline: 0;
+
+                  &:hover, &.active {
+                    color: $dark-brown;
+                    transition: 0.3s ease;
+                  }
+                }
+              }
+
+              .expcontent {
+                &.hidden {
+                  display: none;
+                }
+
+                &.active {
+                  display: block;
+                }
+
+                p {
+                  background: $beige;
+                  border-radius: 5px;
+                  padding: 15px;
+                }
+              }
+            }
           }
         }
       }
     }
-  }
 
-  .about-picture {
-    img {
-      max-width: 100%;
-      height: auto;
-      // border-radius: 25px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .line-break {
-    display: block;
-    height: 1px;
-  }
-
-  .about-story {
-    display: flex;
-    align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-
-    .story-text {
-      padding-left: 60px;
-
-      .h5-title {
-        margin-bottom: 30px;
-        color: $brown;
-      }
-
-      p {
-        color: $grey;
-        margin-bottom: 0;
-      }
-
-      .highlighted {
-        color: $brown;
-        font-weight: bold;
-      }
-
-      a {
-        color: $brown;
-        // text-decoration: underline;
-
-        &:hover {
-          color: $dark-brown;
-          transition: 0.3s ease;
-          // text-decoration: underline;
-        }
-      }
-    }
-
-    .story-picture {
-      max-width: 60%;
-      margin-right: 50px;
-      // padding-bottom: 100px;
+    .about-picture {
+      margin-left: 50px;
 
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 25px;
       }
-    }
-  }
-
-  .about-story-personal {
-
-    .short-story {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-
-      p {
-        font-size: 17px;
-        margin-bottom: 10px;
-      }
-
-      .btn-center {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    p {
-      color: $grey;
-      margin-bottom: 0;
-    }
-
-    .highlighted {
-      color: $brown;
-      font-weight: bold;
     }
   }
 }
 
-@media screen and (max-width: 800px) {
-  .container .about-infos .all-skill-cards {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
+  // .about-text {
+  //   display: flex;
+  //   margin-block: 100px;
+
+  //   .story {
+  //     padding-right: 70px;
+
+  //     h5 {
+  //       margin-bottom: 35px;
+  //     }
+
+  //     h6 {
+  //       color: $light-brown;
+  //       line-height: 22px;
+  //       margin-inline: 40px;
+  //       margin-block: 25px;
+  //     }
+
+  //     p{
+  //       a {
+  //         color: $brown;
+
+  //         &:hover {
+  //           color: $dark-brown;
+  //           transition: 0.3s ease;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .line-break {
+  //   display: block;
+  //   height: 1px;
+  // }
+
+//   .about-story {
+//     display: flex;
+//     align-items: center;
+//     margin-top: 4rem;
+//     margin-bottom: 4rem;
+
+//     .story-text {
+//       padding-left: 60px;
+
+//       .h5-title {
+//         margin-bottom: 30px;
+//         color: $brown;
+//       }
+
+//       p {
+//         color: $grey;
+//         margin-bottom: 0;
+//       }
+
+//       .highlighted {
+//         color: $brown;
+//         font-weight: bold;
+//       }
+
+//       a {
+//         color: $brown;
+//         // text-decoration: underline;
+
+//         &:hover {
+//           color: $dark-brown;
+//           transition: 0.3s ease;
+//           // text-decoration: underline;
+//         }
+//       }
+//     }
+
+//   .about-story-personal {
+
+//     .short-story {
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column;
+//       align-items: center;
+
+//       p {
+//         font-size: 17px;
+//         margin-bottom: 10px;
+//       }
+
+//       .btn-center {
+//         display: flex;
+//         justify-content: center;
+//       }
+//     }
+
+//     .hidden {
+//       display: none;
+//     }
+
+//     p {
+//       color: $grey;
+//       margin-bottom: 0;
+//     }
+//   }
+// }

@@ -1,11 +1,11 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="tab-experience"
+// Connects to data-controller="tab-about"
 export default class extends Controller {
   static targets = ["tab"];
 
   connect() {
-    console.log("Tab Experience Controller connected");
+    console.log("Tab About Controller connected");
     this.openDefaultTab();
   }
 
@@ -14,12 +14,22 @@ export default class extends Controller {
     if (defaultTab) {
       defaultTab.style.display = "block";
       defaultTab.classList.add("active");
+      this.element.classList.add("flex-container");
     }
   }
 
   openTab(event) {
     event.preventDefault();
+
     const tabName = event.target.dataset.tab;
+
+    // Supprime la classe "active" de tous les boutons d'onglet
+    const tabLinks = this.element.querySelectorAll('.tablink');
+    tabLinks.forEach(tabLink => tabLink.classList.remove('active'));
+
+    // Ajoute la classe "active" uniquement au bouton d'onglet actuel
+    event.target.classList.add('active');
+
     this.tabTargets.forEach(tab => {
       if (tab.id === tabName) {
         tab.style.display = "block";
@@ -30,5 +40,6 @@ export default class extends Controller {
         tab.classList.remove("active");
       }
     });
+    this.element.classList.add("flex-container");
   }
 }
