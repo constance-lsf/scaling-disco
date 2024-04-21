@@ -79,9 +79,42 @@
             </div>
             <div class="tab-description">
               <h3>my skills</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.
-              <br>Mauris pellentesque a nibh quis semper. In quis placerat eros sit amet viverra leo
-              <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac viverra lectus. Maecenas nisl tellus, hendrerit vestibulum porttitor sit amet, iaculis non purus. Nullam et erat nec diam tincidunt pellentesque. Ut mollis mauris vitae nulla accumsan, sit amet tristique.</p>
+
+              <div class="skills">
+                <div class="row">
+                  <div class="skill-logo">
+                    <img src="/assets/logo-js.png" alt="js-logo">
+                    <p>JAVASCRIPT</p>
+                  </div>
+
+                  <div class="skill-logo">
+                    <img src="/assets/logo-html.png" alt="html-logo">
+                    <p>HTML</p>
+                  </div>
+
+                  <div class="skill-logo">
+                    <img src="/assets/logo-github.webp" alt="github-logo">
+                    <p>GITHUB</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="skill-logo">
+                    <img src="/assets/logo-rails.png" alt="rails-logo">
+                    <p>RUBY ON RAILS</p>
+                  </div>
+
+                  <div class="skill-logo">
+                    <img src="/assets/logo-scss.png" alt="scss-logo">
+                    <p>SCSS</p>
+                  </div>
+
+                  <div class="skill-logo">
+                    <img src="/assets/logo-heroku.png" alt="heroku-logo">
+                    <p>HEROKU</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -93,8 +126,6 @@
       <img src="/assets/oz1.jpg" alt="australia-pic">
     </div>
   </div>
-
-
 
   <!--<div class="about-text">
 
@@ -120,59 +151,5 @@
     <div class="about-picture col-lg-7">
       <img src="/assets/oz1.jpg" alt="australia-pic">
     </div>
-  </div>-->
-
-  <!--<div class="about-story">
-
-    <div class="story-picture">
-      <img src="/assets/oz1.jpg" alt="australia-pic">
-    </div>
-
-    <div class="story-text">
-      <h5 class="h5-title">MY STORY</h5>
-      <p>If I were to start somewhere, I would say that I have always been very attracted to new technologies: my memories go back to the time of my first Word documents <em>(2005? 2006?)</em>. This curiosity has driven me to <span class="highlighted">explore numerous horizons since my early age</span>, both in my personal and professional life.<span class="line-break"></span>
-      Added to that, <em>growing up in a military family</em>, living to the rhythm of the many relocations that undoubtedly enriched my journey and my worldview.
-      <br>
-
-      <p>After completing my studies (<%= link_to "you can find more information on this by clicking here", my_experiences_about_path %>) and going through this COVID period full of <em>twists and turns and lockdown</em>, I felt the need to embark on a different kind of adventure. What was supposed to be a simple one-month trip to Mexico to celebrate the end of my academic journey turned into <span class="highlighted">an incredible year of travel, encounters, work, and discoveries in Australia</span>.<br>
-
-      <br>Upon returning to France, <em>the question of my professional future</em> arose. After being offered a position as a communication officer, I reached a <span class="highlighted">turning point</span> where I realized that, although I still enjoyed this profession, I felt that <em>something was missing</em>.<span class="line-break"></span>
-      That's when an idea that had been brewing for a year resurfaced: I had heard about a <span class="highlighted">Web Developer training program at Le Wagon</span>. Despite my doubts, the fear of the unknown <em>(has it ever stopped me, after all?)</em>, I decided to embark on this career change. Having always been attracted to reflection and logic, I believe I have the patience needed to delve into this field. <br>
-
-      <br>So here I am, ready to explore new perspectives, to combine my passion for communication with my budding skills in web development. <span class="highlighted">Because after all, why not me?</span><br>
-
-      <br><em>Best regards,</em><br>
-
-      <br>Constance</p>
-    </div>
-  </div>-->
-
-  <!--<div class="about-story-personal" data-controller="toggle-story">
-
-    <div class="short-story">
-      <p>And for the curious ones,</p>
-      <div class="btn-center" data-action="click->toggle-story#toggle">
-        <button class="btn-brown">Getting here: a summary of my journey</button>
-      </div>
-    </div>
-
-    <div class="short-story-text hidden" data-toggle-story-target="hiddenText" id="hiddenText" >
-      <p>If I were to start somewhere, I would say that I have always been very attracted to new technologies: my memories go back to the time of my first Word documents <em>(2005? 2006?)</em>. This curiosity has driven me to <span class="highlighted">explore numerous horizons since my early age</span>, both in my personal and professional life.<span class="line-break"></span>
-      Added to that, <em>growing up in a military family</em>, living to the rhythm of the many relocations that undoubtedly enriched my journey and my worldview.
-      <br>
-      <br>Perhaps that's why I chose an educational path that reflects a thirst for <span class="highlighted">discovery and learning</span>:</p>
-      <ul>
-        <li><p>I started with a DUT in <span class="highlighted">Marketing and Sales Techniques</span> in Saint-Nazaire, where I gained solid foundations in marketing and sales,</p></li>
-        <li><p>Then, I continued with a bachelor's degree in <span class="highlighted">Digital Marketing</span> at SUPDEWEB in Toulouse, alternating as a Community Manager,</p></li>
-        <li><p>Before completing my studies with a master's degree in <span class="highlighted">Communication</span> at Audencia SciencesCom in Nantes, all while alternating as a Communication Officer.</p></li>
-      </ul>
-      <p>After completing my studies and going through this COVID period full of <em>twists and turns and confinement</em>, I felt the need to embark on a different kind of adventure. What was supposed to be a simple one-month trip to Mexico to celebrate the end of my academic journey turned into <span class="highlighted">an incredible year of travel, encounters, work, and discoveries in Australia</span>.<br>
-      <br>Upon returning to France, <em>the question of my professional future</em> arose. After being offered a position as a communication officer, I reached a <span class="highlighted">turning point</span> where I realized that, although I still enjoyed this profession, I felt that <em>something was missing</em>.<span class="line-break"></span>
-      That's when an idea that had been brewing for a year resurfaced: I had heard about a <span class="highlighted">Web Developer training program at Le Wagon</span>. Despite my doubts, the fear of the unknown <em>(has it ever stopped me, after all?)</em>, I decided to embark on this career change. Having always been attracted to reflection and logic, I believe I have the patience needed to delve into this field.<br>
-      <br>So here I am, ready to explore new perspectives, to combine my passion for communication with my budding skills in web development. <span class="highlighted">Because after all, why not me?</span><br>
-      <br><em>Best regards,</em><br>
-      <br>Constance</p>
-    </div>
-
   </div>-->
 </div>
