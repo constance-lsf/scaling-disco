@@ -32,6 +32,7 @@
   .nav-link {
     a {
       color: inherit;
+
       &:hover {
         color: $brown;
         border-color: $brown;
@@ -45,11 +46,5 @@
     color: $brown!important;
     border-color: $brown;
     border-radius: 25px;
-  }
-
-  .dropdown-item:hover,
-  .dropdown-item.active .dropdown-menu {
-    background-color: $beige;
-    color: $brown;
   }
 }
