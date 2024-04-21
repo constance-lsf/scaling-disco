@@ -14,12 +14,6 @@
     }
   }
 
-
-
-
-
-
-
   .about-skills {
     p {
       color: $grey;
@@ -81,10 +75,6 @@
             border: transparent;
             transition: flex 0.5s ease;
 
-            // h6 {
-            //   color: white;
-            // }
-
             p {
               color: white;
             }
@@ -121,7 +111,6 @@
       float: right;
       max-width: 60%;
       padding-left: 45px;
-      // padding-top: 50px;
       padding-bottom: 100px;
 
       img {
