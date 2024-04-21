@@ -1,7 +1,55 @@
 @import "config/colors";
 
 .projects-container {
-  // padding-top: 70px;
+
+  .project-title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      color: $dark-brown;
+      margin-bottom: 30px;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .card {
+      max-width: calc(50% - 10px);
+
+      img {
+        max-width: 100%;
+      }
+
+      .project-links {
+        display: flex;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
 
   .projects-title {
     margin-top: 125px;
@@ -106,141 +154,6 @@
       }
     }
 
-    .project-links {
-      display: flex;
-      justify-content: space-between;
 
-      a {
-        text-decoration: none;
-        color: white;
-
-        &:hover {
-          color: $brown;
-          transition: 0.3s ease;
-        }
-      }
-    }
   }
 }
-
-//   .project-card-black {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-
-//     width: 100%;
-//     height: 350px;
-
-//     background-color: $almost-black;
-//     color: white;
-//     border-radius: 25px;
-//     padding-block: 35px;
-//     padding-inline: 45px;
-//     margin-top: 80px;
-//     margin-bottom: 80px;
-
-//     p {
-//       color: grey;
-//     }
-
-//     .project-pic {
-//       flex: 1;
-
-//       .mobile-pic-container {
-//         display: flex;
-//         height: 100%;
-
-//         .mobile-pic-item {
-//           flex: 1;
-//           margin-right: 10px;
-//           width: 30%;
-
-//           img {
-//             width: 100%;
-//             height: auto;
-//             border-radius: 25px;
-//           }
-//         }
-//       }
-
-//       .web-pic {
-//         img {
-//           width: 100%;
-//           height: 100%;
-//           border-radius: 25px;
-//         }
-//       }
-//     }
-
-//     .project-details {
-//       flex: 1;
-//       padding-left: 60px;
-//     }
-
-//     .project-links {
-//       display: flex;
-//       justify-content: space-between;
-
-//       a {
-//         text-decoration: none;
-//         color: white;
-
-//         &:hover {
-//           color: $brown;
-//           transition: 0.3s ease;
-//         }
-//       }
-//     }
-//   }
-
-//   .project-card-grey {
-//     display: flex;
-//     flex-direction: row-reverse;
-//     justify-content: space-between;
-
-//     width: 100%;
-//     height: 350px;
-
-//     background-color: $grey-beige;
-//     color: black;
-//     border-radius: 25px;
-//     padding-block: 35px;
-//     padding-inline: 45px;
-//     margin-top: 80px;
-//     margin-bottom: 80px;
-
-//     p {
-//       color: grey;
-//     }
-
-//     .project-pic {
-//       flex: 1;
-
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         border-radius: 25px;
-//       }
-//     }
-
-//     .project-details {
-//       flex: 1;
-//       padding-right: 60px;
-//     }
-
-//     .project-links {
-//       display: flex;
-//       justify-content: space-between;
-
-//       a {
-//         text-decoration: none;
-//         color: black;
-
-//         &:hover {
-//           color: $brown;
-//           transition: 0.3s ease;
-//         }
-//       }
-//     }
-//   }
-// }
