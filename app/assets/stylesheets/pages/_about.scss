@@ -30,7 +30,8 @@
           padding: 10px;
           padding-inline: 20px;
           margin-right: 5px;
-          border: #9B8269 1px solid;
+          border: $brown 1px solid;
+          color: $brown;
           border-radius: 30px;
           background-color: transparent;
           cursor: pointer;
@@ -64,7 +65,7 @@
               .highlighted {
                 font-size: 18px;
                 color: $brown;
-                font-weight: bold;
+                font-weight: 600;
                 padding-left: 25px;
               }
 

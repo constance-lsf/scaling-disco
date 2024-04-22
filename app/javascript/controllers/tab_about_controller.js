@@ -15,6 +15,11 @@ export default class extends Controller {
       defaultTab.style.display = "block";
       defaultTab.classList.add("active");
       this.element.classList.add("flex-container");
+
+      const defaultButton = this.element.querySelector('.tablink');
+      if (defaultButton) {
+        defaultButton.click();
+      }
     }
   }
 
@@ -23,11 +28,9 @@ export default class extends Controller {
 
     const tabName = event.target.dataset.tab;
 
-    // Supprime la classe "active" de tous les boutons d'onglet
     const tabLinks = this.element.querySelectorAll('.tablink');
     tabLinks.forEach(tabLink => tabLink.classList.remove('active'));
 
-    // Ajoute la classe "active" uniquement au bouton d'onglet actuel
     event.target.classList.add('active');
 
     this.tabTargets.forEach(tab => {
