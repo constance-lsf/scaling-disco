@@ -14,7 +14,9 @@
     <% @projects.each do |project| %>
       <div class="card">
         <%# <img src="/assets/UNBL-1.feed.png" class="card-img-top" alt="..."> %>
-        <%= image_tag asset_path(project.picture) %>
+        <%= link_to project_path(project) do %>
+          <%= image_tag asset_path(project.picture) %>
+        <% end %>
         <div class="card-body">
           <h5 class="card-title"><%= link_to project.title, project_path(project) %></h5>
           <p class="card-text"><%= project.description %></p>
@@ -24,12 +26,15 @@
               <%= link_to "See more", project_path(project) %>
             </div>
             <div class="btn-degrade-small">
-              <i class="fa-solid fa-arrow-right"></i>
               <% if project.github_link.present? %>
+                <i class="fa-solid fa-arrow-right"></i>
                 <%= link_to "Github", project.github_link, :target => "_blank" %>
               <% end %>
+            </div>
+            <div class="btn-degrade-small">
               <% if project.web_link.present? %>
-                <%= link_to "See more", project.web_link, :target => "_blank" %>
+                <i class="fa-solid fa-arrow-right"></i>
+                <%= link_to "Web site", project.web_link, :target => "_blank" %>
               <% end %>
             </div>
           </div>

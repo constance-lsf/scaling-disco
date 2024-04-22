@@ -7,14 +7,19 @@
   <div class="project-title">
     <h2><%= @project.title %></h2>
     <p><%= @project.description %></p>
-    <div class="btn-degrade-small">
-      <i class="fa-solid fa-arrow-right"></i>
-      <% if @project.github_link.present? %>
-        <%= link_to "Github", @project.github_link, :target => "_blank" %>
-      <% end %>
-      <% if @project.web_link.present? %>
-        <%= link_to "See more", @project.web_link, :target => "_blank" %>
-      <% end %>
+    <div class="project-links">
+      <div class="btn-degrade-small">
+        <% if @project.github_link.present? %>
+          <i class="fa-solid fa-arrow-right"></i>
+          <%= link_to "Github", @project.github_link, :target => "_blank" %>
+        <% end %>
+      </div>
+      <div class="btn-degrade-small">
+        <% if @project.web_link.present? %>
+          <i class="fa-solid fa-arrow-right"></i>
+          <%= link_to "Web site", @project.web_link, :target => "_blank" %>
+        <% end %>
+      </div>
     </div>
   </div>
 
