@@ -35,9 +35,10 @@ Project.create!(
   duration: '2 weeks',
   description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4. Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
   skill: 'Ruby on Rails, JavaScript',
-  picture: 'TOIS-1.feed.png',
-  pictures: ['TOIS-2.discover.png', 'TOIS-3.bookmarks.png', 'TOIS-4.perso-profile.png'],
-  github_link: 'https://github.com/achillllllllle/tois'
+  picture: 'TOIS-FOND.png',
+  pictures: ['TOIS-1.feed.png', 'TOIS-2.discover.png', 'TOIS-3.bookmarks.png', 'TOIS-4.perso-profile.png'],
+  github_link: 'https://github.com/achillllllllle/tois',
+  web_link: 'https://www.onceaweek.site/'
 )
 
 Project.create!(
@@ -48,7 +49,7 @@ Project.create!(
   description: 'A platform built with Ruby on Rails and Javascript in a team of 4.
   Users can create accounts, add their own activities called "wonders", and book some wonders.',
   skill: 'Ruby on Rails, JavaScript',
-  picture: 'UNBL-1.feed.png',
+  picture: 'UNBL-FOND.png',
   pictures: ['UNBL-2.wonder.png', 'UNBL-3.post.png'],
   github_link: 'https://github.com/achillllllllle/unbelievably'
 )

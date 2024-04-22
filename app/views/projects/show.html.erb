@@ -20,8 +20,8 @@
 
   <div class="project-infos">
     <div class="project-pic col-lg-6">
-      <%= image_tag asset_path(@project.picture) %>
       <% if @project.project_type == 'web' %>
+        <%= image_tag asset_path(@project.picture) %>
         <div class="web-pic-container">
           <% pictures = JSON.parse(@project.pictures) %>
           <% pictures.each do |picture| %>
@@ -32,9 +32,11 @@
       <% else %>
         <div class="mobile-pic-container">
           <% pictures = JSON.parse(@project.pictures) %>
-          <% pictures.each do |picture| %>
-            <%= image_tag asset_path(picture), class: 'mobile-pic-item' %>
-          <% end %>
+          <div class="pic-grid">
+            <% pictures.each do |picture| %>
+              <%= image_tag asset_path(picture), class: 'mobile-pic-item' %>
+            <% end %>
+          </div>
         </div>
       <% end %>
     </div>

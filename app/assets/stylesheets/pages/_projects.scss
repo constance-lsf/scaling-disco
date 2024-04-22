@@ -84,6 +84,27 @@
           }
         }
       }
+
+      .mobile-pic-container {
+        display: flex;
+
+        .pic-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+
+          .mobile-pic-item {
+            max-width: 100%;
+            height: auto;
+
+            img {
+              height: auto;
+              border-radius: 10px;
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
     }
 
     .project-details {
