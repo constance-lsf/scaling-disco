@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_16_165732) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_22_163821) do
   create_table "abouts", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -48,6 +48,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_16_165732) do
     t.string "project_type"
     t.text "pictures"
     t.string "duration"
+    t.text "long_description"
+    t.text "my_role"
   end
 
 end

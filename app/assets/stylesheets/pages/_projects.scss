@@ -36,13 +36,17 @@
       h5 {
         a {
           text-decoration: none;
-          color: $dark-brown;
+          color: $brown;
 
           &:hover {
-            color: $brown;
+            color: $dark-brown;
             transition: 0.3s ease;
           }
         }
+      }
+
+      p {
+        color: $grey;
       }
 
       img {

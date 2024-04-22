@@ -6,7 +6,7 @@
 
   <div class="project-title">
     <h2><%= @project.title %></h2>
-    <p><%= @project.description %></p>
+    <p><%= @project.long_description %></p>
     <div class="project-links">
       <div class="btn-degrade-small">
         <% if @project.github_link.present? %>
@@ -17,7 +17,7 @@
       <div class="btn-degrade-small">
         <% if @project.web_link.present? %>
           <i class="fa-solid fa-arrow-right"></i>
-          <%= link_to "Web site", @project.web_link, :target => "_blank" %>
+          <%= link_to "Web app", @project.web_link, :target => "_blank" %>
         <% end %>
       </div>
     </div>
@@ -54,13 +54,8 @@
       <p><%= @project.date.strftime('%m-%Y') %> - <%= @project.duration %></p>
 
       <h5>my role</h5>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat illo, tenetur nihil tempore voluptatibus esse at officiis asperiores consectetur ratione blanditiis saepe ex repellendus odit hic, vel magni autem in?</p>
+      <p><%= @project.my_role %></p>
     </div>
   </div>
 
 </div>
-
-<%# t.string "picture"
-t.text "pictures"
-t.string "github_link"
-t.string "web_link" %>
