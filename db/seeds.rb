@@ -31,24 +31,24 @@ About.create!(
 Project.create!(
   title: 'CULTURE JAM - Social Media Platform',
   project_type: 'mobile',
-  picture: 'TOIS-1.feed.png',
-  pictures: ['TOIS-1.feed.png', 'TOIS-2.discover.png', 'TOIS-4.perso-profile.png'],
-  description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4. Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
-  skill: 'Ruby on Rails, JavaScript',
   date: '04-03-2024',
   duration: '2 weeks',
+  description: 'A social media built with Ruby on Rails and JavaScript, in a team of 4. Users can create accounts, add cultural events, post reviews about their last activity, saved some activities with a bookmark and follow other users.',
+  skill: 'Ruby on Rails, JavaScript',
+  picture: 'TOIS-1.feed.png',
+  pictures: ['TOIS-2.discover.png', 'TOIS-3.bookmarks.png', 'TOIS-4.perso-profile.png'],
   github_link: 'https://github.com/achillllllllle/tois'
 )
 
 Project.create!(
   title: 'UNBELIEVABLY - Airbnb Clone',
   project_type: 'web',
-  picture: 'UNBL-1.feed.png',
-  pictures: ['UNBL-1.feed.png', 'UNBL-3.post.png'],
+  date: '26-02-2024',
+  duration: '1 week',
   description: 'A platform built with Ruby on Rails and Javascript in a team of 4.
   Users can create accounts, add their own activities called "wonders", and book some wonders.',
   skill: 'Ruby on Rails, JavaScript',
-  date: '26-02-2024',
-  duration: '1 week',
+  picture: 'UNBL-1.feed.png',
+  pictures: ['UNBL-2.wonder.png', 'UNBL-3.post.png'],
   github_link: 'https://github.com/achillllllllle/unbelievably'
 )

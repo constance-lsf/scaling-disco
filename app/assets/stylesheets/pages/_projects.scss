@@ -1,6 +1,7 @@
 @import "config/colors";
 
 .projects-container {
+  margin-bottom: 100px;
 
   .project-title {
     margin-top: 100px;
@@ -9,7 +10,7 @@
     h2 {
       font-size: 40px;
       font-weight: 600;
-      color: $dark-brown;
+      color: $brown;
       margin-bottom: 30px;
     }
   }
@@ -21,6 +22,18 @@
 
     .card {
       max-width: calc(50% - 10px);
+
+      h5 {
+        a {
+          text-decoration: none;
+          color: $dark-brown;
+
+          &:hover {
+            color: $brown;
+            transition: 0.3s ease;
+          }
+        }
+      }
 
       img {
         width: 100%;
@@ -43,120 +56,53 @@
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-  .projects-title {
-    margin-top: 125px;
-    margin-bottom: 80px;
-  }
-
-  .ul-projects {
-    list-style-type: none;
+  .project-infos {
     display: flex;
-    padding-left: 0px;
-    padding-top: 45px;
 
-    .li-projects {
-      padding: 10px;
-      padding-inline: 20px;
-      margin-right: 20px;
-      border: $brown 1px solid;
-      border-radius: 30px;
+    .project-pic {
+      margin-right: 50px;
 
-      a {
-        text-decoration: none;
-        color: $brown;
-
-        &:hover {
-          color: white;
-        }
-      }
-
-      &:hover {
-        color: white;
-        background: linear-gradient(70deg, $superlight-brown 0%, $brown 100%);
-        border: transparent;
-        transition: flex 0.5s ease;
-
-        a {
-          color: white;
-        }
-      }
-
-      &.active {
-        color: white;
-        background: linear-gradient(70deg, $superlight-brown 0%, $brown 100%);
-        border: transparent;
-
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-
-  .project {
-    margin-block: 125px;
-
-    .project-infos-title {
-      display: flex;
-      // justify-content: space-between;
-    }
-
-    .project-infos {
-      margin-bottom: 30px;
-
-      h5 {
+      img {
+        max-width: 100%;
+        height: auto;
         margin-bottom: 20px;
-      }
-    }
-
-    .project-details {
-      display: flex;
-      justify-content: flex-end;
-
-      .tech {
-        margin-right: 60px;
-      }
-    }
-
-    .project-card {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px;
-      background-color: $light-brown;
-      border-radius: 25px;
-
-      .mobile-pic-container {
-        display: flex;
-        justify-content: space-between;
-
-        img {
-          max-width: 30%;
-          border-radius: 5px;
-        }
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       .web-pic-container {
         display: flex;
-        justify-content: space-between;
+        max-width: calc(50% - 10px);
 
-        img {
-          max-width: 49%;
-          border-radius: 5px;
+        .web-pic-item {
+          margin-right: 20px;
+
+          img {
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          }
         }
       }
     }
 
+    .project-details {
+      margin-left: 40px;
 
+      h5 {
+        font-weight: 600;
+        color: $brown;
+        font-size: 20px;
+        background: none;
+        border: none;
+        padding-inline: 0;
+      }
+
+      p {
+        background: #F5F3F0;
+        border-radius: 5px;
+        padding: 15px;
+      }
+    }
   }
 }

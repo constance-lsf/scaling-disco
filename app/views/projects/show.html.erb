@@ -1,0 +1,59 @@
+<div class="container projects-container">
+
+  <div class="btn-back" data-controller="back-button">
+    <%= link_to '<i class="fa-solid fa-arrow-left" data-action="click->back-button#goBack"></i> back'.html_safe, 'javascript:history.go(-1)', id: 'backLink' %>
+  </div>
+
+  <div class="project-title">
+    <h2><%= @project.title %></h2>
+    <p><%= @project.description %></p>
+    <div class="btn-degrade-small">
+      <i class="fa-solid fa-arrow-right"></i>
+      <% if @project.github_link.present? %>
+        <%= link_to "Github", @project.github_link, :target => "_blank" %>
+      <% end %>
+      <% if @project.web_link.present? %>
+        <%= link_to "See more", @project.web_link, :target => "_blank" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="project-infos">
+    <div class="project-pic col-lg-6">
+      <%= image_tag asset_path(@project.picture) %>
+      <% if @project.project_type == 'web' %>
+        <div class="web-pic-container">
+          <% pictures = JSON.parse(@project.pictures) %>
+          <% pictures.each do |picture| %>
+            <%= image_tag asset_path(picture), class: 'web-pic-item' %>
+          <% end %>
+        </div>
+
+      <% else %>
+        <div class="mobile-pic-container">
+          <% pictures = JSON.parse(@project.pictures) %>
+          <% pictures.each do |picture| %>
+            <%= image_tag asset_path(picture), class: 'mobile-pic-item' %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="project-details col-lg-5">
+      <h5>tech</h5>
+      <p><%= @project.skill %></p>
+
+      <h5>duration</h5>
+      <p><%= @project.date.strftime('%m-%Y') %> - <%= @project.duration %></p>
+
+      <h5>my role</h5>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat illo, tenetur nihil tempore voluptatibus esse at officiis asperiores consectetur ratione blanditiis saepe ex repellendus odit hic, vel magni autem in?</p>
+    </div>
+  </div>
+
+</div>
+
+<%# t.string "picture"
+t.text "pictures"
+t.string "github_link"
+t.string "web_link" %>

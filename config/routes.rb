@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get 'my_skills', on: :member
   end
 
-  resources :projects, only: [:index]
+  resources :projects, only: [:index, :show]
 
   resource :contact, only: [:new, :create]
 end

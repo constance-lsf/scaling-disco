@@ -6,4 +6,8 @@ class ProjectsController < ApplicationController
 
     @skills = @projects.pluck(:skill).map { |s| s.split(', ') }.flatten.uniq
   end
+
+  def show
+    @project = Project.find(params[:id])
+  end
 end

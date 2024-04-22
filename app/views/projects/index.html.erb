@@ -16,12 +16,12 @@
         <%# <img src="/assets/UNBL-1.feed.png" class="card-img-top" alt="..."> %>
         <%= image_tag asset_path(project.picture) %>
         <div class="card-body">
-          <h5 class="card-title"><%= project.title %></h5>
+          <h5 class="card-title"><%= link_to project.title, project_path(project) %></h5>
           <p class="card-text"><%= project.description %></p>
           <div class="project-links">
             <div class="btn-degrade-small">
               <i class="fa-solid fa-arrow-right"></i>
-              <%= link_to "See more", project.github_link, :target => "_blank" %>
+              <%= link_to "See more", project_path(project) %>
             </div>
             <div class="btn-degrade-small">
               <i class="fa-solid fa-arrow-right"></i>
@@ -37,77 +37,4 @@
       </div>
     <% end %>
   </div>
-
-
-
-
-
-
-  <div class="projects-title">
-
-    <ul class="ul-projects" data-controller="tab-category" data-tab-target="tab">
-      <li class="li-projects" data-action="click->tab-category#changeTab" data-tab="all"><%= link_to "All", projects_path %></li>
-      <% @skills.each do |skill| %>
-        <li class="li-projects tab" data-action="click->tab-category#changeTab" data-tab="<%= skill %>" data-skill="<%= skill %>"><%= link_to skill, projects_path(skill: skill) %></li>
-      <% end %>
-    </ul>
-  </div>
-
-  <hr>
-
-  <% @projects.each do |project| %>
-    <div class="project" data-skill="<%= project.skill %>" data-project-target="project">
-      <div class="project-infos">
-        <div class="project-infos-title">
-          <h5 class="col-lg-5"><%= project.title %></h5>
-
-          <div class="project-details col-lg-7">
-            <div class="tech">
-              <h6>Tech</h6>
-              <p><%= project.skill.upcase %></p>
-            </div>
-            <div class="duration">
-              <h6>Duration</h6>
-              <p><%= project.date.strftime('%m-%Y') %> - <%= project.duration %></p>
-            </div>
-          </div>
-        </div>
-
-        <p><%= project.description %></p>
-        <div class="btn-degrade-small">
-          <i class="fa-solid fa-arrow-right"></i>
-          <% if project.github_link.present? %>
-            <%= link_to "Github", project.github_link, :target => "_blank" %>
-          <% end %>
-          <% if project.web_link.present? %>
-            <%= link_to "See more", project.web_link, :target => "_blank" %>
-          <% end %>
-        </div>
-      </div>
-
-
-      <div class="project-card">
-        <div class="project-pic <%= project.project_type == 'web' ? 'web-pic' : 'mobile-pic' %>">
-          <% if project.project_type == 'web' %>
-            <div class="web-pic-container">
-              <% pictures = JSON.parse(project.pictures) %>
-              <% pictures.each do |picture| %>
-                <%= image_tag asset_path(picture), class: 'web-pic-item' %>
-              <% end %>
-            </div>
-          <% else %>
-            <% if project.pictures.present? %>
-              <div class="mobile-pic-container">
-                <% pictures = JSON.parse(project.pictures) %>
-                <% pictures.each do |picture| %>
-                  <%= image_tag asset_path(picture), class: 'mobile-pic-item' %>
-                <% end %>
-              </div>
-            <% end %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  <% end %>
-
 </div>
